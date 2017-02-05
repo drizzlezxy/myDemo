@@ -1,0 +1,19 @@
+@import '../_config.scss';
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.m-yqitemdetail { 
+    .btn-present {
+    	position: fixed;
+    	bottom: 0;
+    	left: 0;
+    	width: 100%;
+    	line-height: 0.5rem;
+    	background-color: #d84343;
+    	border: 0;
+    	color: #fff;
+    	font-size: 0.16rem;
+    }
+}

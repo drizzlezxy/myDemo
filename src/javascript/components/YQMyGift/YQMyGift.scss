@@ -1,0 +1,54 @@
+@import '../../../scss/_config.scss';
+
+.m-gift-list {
+	margin:0 0.15rem;
+	
+	.list {
+		position:relative;
+		height: 0.94rem;
+		border-radius:0.06rem;
+		-webkit-border-radius: 0.06rem;
+		margin-bottom:0.1rem;
+		background: #fff;
+		padding:0.09rem 0.15rem 0.09rem 0.1rem;
+
+		img {
+			display: inline-block;
+			width:0.68rem;
+		}
+
+		.desc {
+			position: absolute;
+    		top: 50%;
+    		line-height: 0.23rem;
+    		width:56.25%;
+    		-webkit-transform: translate3d(0,-50%,0);
+    		transform:translate3d(0,-50%,0);
+    		margin-left:0.77rem;
+			font-size:0.14rem;
+			color:#333;
+		}
+		.noshare{
+			margin-right: 0.15rem;
+			width:auto;
+		}
+		
+		.m-btn-share {
+			position: absolute;
+    		right: 0.15rem;
+    		top: 50%;
+			width:0.46rem;
+			height:0.46rem;
+			line-height: 0.46rem;
+			-webkit-transform: translate3d(0,-50%,0);
+    		transform: translate3d(0,-50%,0);
+			-webkit-border-radius:0.23rem;
+			border-radius:0.23rem;
+			background: #dcba80;
+    		text-align: center;
+   		 	color: #fff;
+		}
+
+
+	}
+}

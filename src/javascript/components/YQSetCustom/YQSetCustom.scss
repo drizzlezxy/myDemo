@@ -1,0 +1,40 @@
+.m-custom-text {
+	height:0.94rem;
+	padding:0.09rem 0.09rem 0.08rem 0.1rem;
+	-webkit-border-radius:0.06rem;
+	border-radius:0.06rem;
+	background:#fff;
+
+	.logo {
+		float:left;
+		display: inline-block;
+		width:0.68rem;
+		margin-right: 0.09rem;
+	}
+
+	.m-conent {
+		float:left;
+		width: calc(100% - 0.77rem);
+		width: -webkit-calc(100% - 0.77rem);
+
+		textarea {
+			width:100%;
+			height: 0.60rem;
+			line-height: 0.2rem;
+			border:none;
+			font-size: 0.14rem;
+			overflow: hidden;
+			background:#fff;
+			color:#333;
+		}
+
+		.limit {
+			float:right;
+			margin-right: 0.04rem;
+			color:#999;
+			font-size:0.13rem;
+		}
+	}
+
+
+}

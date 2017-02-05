@@ -1,0 +1,70 @@
+{
+"code": "0",
+"message": null,
+"result": [
+    {
+        "id": 32,
+        "level": 1,
+        "name": "农特产",
+        "productParameter": "117,118,119,120,121,122,123,124,125,126",
+        "saleParameter": null,
+        "showIndex": 1,
+        "superCategoryId": 0,
+        "categoryDTOList": [
+            {
+                "id": 47,
+                "level": 2,
+                "name": "冲调饮品",
+                "productParameter": "117,118,119,120,121,122,123,124,125,126",
+                "saleParameter": null,
+                "showIndex": 1,
+                "superCategoryId": 32,
+                "categoryDTOList": [
+                    {
+                        "id": 73,
+                        "level": 3,
+                        "name": "天然粉",
+                        "productParameter": "117,118,119,120,121,122,123,124,125,126",
+                        "saleParameter": null,
+                        "showIndex": 1,
+                        "superCategoryId": 47,
+                        "categoryDTOList": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "level": 1,
+        "name": "源生鲜",
+        "productParameter": "117,118,119,120,121,122,123,124,125,126",
+        "saleParameter": null,
+        "showIndex": 1,
+        "superCategoryId": 0,
+        "categoryDTOList": [
+            {
+                "id": 33,
+                "level": 2,
+                "name": "新鲜水果",
+                "productParameter": "117,118,119,120,121,122,123,124,125,126",
+                "saleParameter": null,
+                "showIndex": 1,
+                "superCategoryId": 31,
+                "categoryDTOList": [
+                    {
+                        "id": 49,
+                        "level": 3,
+                        "name": "车厘子",
+                        "productParameter": "117,118,119,120,121,122,123,124,125,126",
+                        "saleParameter": null,
+                        "showIndex": 1,
+                        "superCategoryId": 33,
+                        "categoryDTOList": null
+                    }
+                ]
+            }
+        ]
+    }
+]
+}

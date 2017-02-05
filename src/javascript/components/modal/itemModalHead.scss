@@ -1,0 +1,31 @@
+@import '../../../scss/_config.scss';
+
+.m-item-modal-head {
+  display: flex;
+  padding: 0.1rem;
+  img {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.04rem;
+  }
+  .item-desc {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .item-name {
+      margin-bottom: 0.03rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .item-spec {
+      margin-bottom: 0.12rem;
+      color: #9397a1;
+    }
+    .item-price {
+      margin-bottom: 0;
+      font-size: $font-size-sm;
+      color: #ff3600;
+    }
+  }
+}

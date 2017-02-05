@@ -1,0 +1,109 @@
+{
+  "code": 0,
+  "message": "",
+  "result": {
+    "id": "1",
+    "title": "",
+    "name": "千岛湖板栗 200g 商品名内含规格，限一行",
+    "brandName": "上好佳",
+    "imageList": [
+      "../../res/imgs/prdt.jpg",
+      "../..//res/imgs/2.jpg",
+      "../..//res/imgs/3.jpg",
+      "../..//res/imgs/4.jpg",
+      "../..//res/imgs/5.jpg",
+      "../..//res/imgs/backshop.jpg"
+    ],
+    "desc": "桑树糕的详细介绍字数限定在之内字之内桑树糕的详细介绍...",
+    "skuList": [
+      {
+        "id": "1",
+        "prdtId": "1",
+        "spec": "100g*2",
+        "originPrice": "129",
+        "payPrice": "139",
+        "count": 3,
+        "status": 1
+      },
+      {
+        "id": "2",
+        "prdtId": "2",
+        "spec": "100g*4",
+        "originPrice": "139",
+        "payPrice": "39",
+        "count": 5,
+        "status": 2
+      },
+      {
+        "id": "3",
+        "prdtId": "3",
+        "spec": "100g*6",
+        "originPrice": "149",
+        "payPrice": "149",
+        "count": 5,
+        "status": 1
+      },
+      {
+        "id": "4",
+        "prdtId": "3",
+        "spec": "100g*9",
+        "originPrice": "159",
+        "payPrice": "319",
+        "count": 5,
+        "status": 1
+      }
+    ],
+    "actionList": [
+      {
+        "key": 1,
+        "value": "满25减12；满35减15；满60减24"
+      },
+      {
+        "key": 2,
+        "value": "满起始条件赠XXXX"
+      }
+    ],
+    "detailList": [
+      "../../res/imgs/prdt.jpg",
+      "../../res/imgs/2.jpg",
+      "../../res/imgs/3.jpg",
+      "../../res/imgs/4.jpg",
+      "../../res/imgs/5.jpg",
+      "../../res/imgs/backshop.jpg"
+    ],
+    "specList": [
+      {
+        "key": "品牌",
+        "value": "老干妈"
+      },
+      {
+        "key": "产品标准号",
+        "value": "GB 32459-2015"
+      },
+      {
+        "key": "产地",
+        "value": "浙江省杭州市滨江区"
+      },
+      {
+        "key": "食品添加剂",
+        "value": "甜味剂、膨松剂、着色剂、面粉处理剂"
+      },
+      {
+        "key": "保质期",
+        "value": "365天"
+      },
+      {
+        "key": "等级",
+        "value": "国家标准"
+      },
+      {
+        "key": "规格",
+        "value": "2000ml"
+      },
+      {
+        "key": "配料表",
+        "value": "白砂糖、植脂末、乳化剂、调味剂、速溶咖啡、阿斯巴甜、安赛蜜、苯甲酸钠、硝酸盐、如果胶、明胶"
+      }
+    ]
+  }
+}

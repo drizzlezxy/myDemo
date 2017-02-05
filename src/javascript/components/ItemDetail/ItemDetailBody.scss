@@ -1,0 +1,19 @@
+@import '../../../scss/_config.scss';
+
+.m-detailbody {
+	background: #e9e9e9;
+
+	.feature {
+		height: 1.06rem;
+		background: url(http://sjyx.xinguang.com/res/images/ItemDetail/teses@3x.png) no-repeat;
+		background-size: contain;
+	}
+
+	.m-detail-images {
+		padding: 0.1rem;
+		background: #ffffff;
+		img {
+			width: 100%;
+		}
+	}
+}

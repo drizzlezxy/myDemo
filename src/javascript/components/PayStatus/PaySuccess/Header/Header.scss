@@ -1,0 +1,29 @@
+@import './icon_sprite2x.scss';
+
+@media only screen and (min-resolution: 3dppx) {
+  @import './icon_sprite3x.scss';
+}
+
+.m-header {
+	padding: 0.1rem;
+
+	text-align: center;
+
+	.status-img {
+		display: inline-block;
+		margin-top: 0.3rem;
+		width: 0.66rem;
+		height: 0.66rem;
+		border: 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.status-text {
+		margin-top: 0.3rem;
+		margin-bottom: 0.31rem;
+		font-size: 0.15rem;
+		text-align: center;
+		color: #41444e;
+	}
+}

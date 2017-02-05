@@ -1,0 +1,119 @@
+@import '../../../scss/_config.scss';
+
+.m-iteminfo {
+	.m-basic-info {
+		.item-name {
+			margin: 0.1rem;
+			font-weight: bold;
+			font-size: 0.15rem;
+			color: #222222;
+			@include lineMore(1);
+		}
+		
+		.item-desc {
+			padding: 0 0.1rem;
+			font-size: 0.12rem;
+			line-height: 0.18rem;
+			color: #666666;
+			@include lineMore(2);
+		}
+
+		.item-price {
+			padding: 0.1rem;
+			font-size: 0.2rem;
+			color: #ff3600;
+
+			.price-deco {
+				font-size: 0.12rem;
+			}
+			.pay-price {
+				font-size: 0.2rem;
+				color: #ff3600;
+			}
+
+			.origin-price {
+				margin-left: 0.04rem;
+				font-size: 0.12rem;
+				color: #999999;
+				text-decoration: line-through;
+			}
+		}
+
+		.m-paramlist {
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			padding: 0.15rem 0.1rem 0.1rem 0.1rem;
+		}
+
+		.m-deliver-addr {
+			display: none;
+			margin-top: 0.05rem;
+			padding: 0.1rem;
+			font-size: 0.12rem;
+			color: #ff3600;
+		}
+	}
+
+	.m-extra-info {
+		display: none;
+		height: 0.6rem;
+		border-top: 1px solid #ddd;
+		@extend %displayFlex;
+		@extend %AlignCenter;
+	    @include flexJustifyContent(center);
+
+	    .block {
+	    	height: 100%;
+	    	@extend %flexGrow;
+	    	@extend %displayFlexCol;
+	    	@extend %AlignCenter;
+	   		@include flexJustifyContent(center);
+	   		position: relative;
+	   		&:not(:last-child):after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				content: '';
+				height: 0.27rem;
+				margin: 0.16rem 0;
+	   			border-right: 1px solid #e5e5e5;
+	   		}
+	    	.attr-val {
+	    		width: 0.2rem;
+	    		height: 0.2rem;
+	    		background-size: 0.2rem 0.2rem;
+	    		&.p1 {
+	    			background-image: url(../../../../res/images/ItemDetail/zuobiao@2x.png);
+	    		}
+	    		&.p2 {
+	    			background-image: url(../../../../res/images/ItemDetail/shijian@2x.png);
+	    		}
+	    		&.p3 {
+	    			background-image: url(../../../../res/images/ItemDetail/zhileng@2X.png);
+	    		}
+	    		@media only screen and (min-width: 1125px) {
+		    		&.p1 {
+		    			background-image: url(../../../../res/images/ItemDetail/zuobiao@3x.png);
+		    		}
+		    		&.p2 {
+		    			background-image: url(../../../../res/images/ItemDetail/shijian@3x.png);
+		    		}
+		    		&.p3 {
+		    			background-image: url(../../../../res/images/ItemDetail/zhileng@3X.png);
+		    		}
+	    		}
+		    }
+
+		    .attr-type {
+				color: #666;
+				line-height: 0.11rem;
+				font-size: 0.11rem;
+				margin-top: 0.07rem;
+		    }
+
+		    &:last-child {
+		    	border-right: 0;
+		    }
+	    }
+	}
+}

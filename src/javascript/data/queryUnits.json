@@ -1,0 +1,14 @@
+{
+    "code": 0,
+    "message": "",
+    "result": {
+        "unitGroupList": [
+        	{
+        		"unitId": 100,
+				"data": {
+					"margin": 5
+				}
+        	}
+        ]
+    }
+}

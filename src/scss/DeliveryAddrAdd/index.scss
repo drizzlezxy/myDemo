@@ -1,0 +1,148 @@
+@import './icon_sprite2x.scss';
+
+@media only screen and (min-width: 1125px) {
+  @import './icon_sprite3x.scss';
+}
+
+$main-green-color: #2bc1bd;
+$main-gray-color: #dedede;
+.m-deliveryaddradd { 
+	position: absolute;
+   	width: 100%;
+   	height: 100%;
+   	background-color: #fff;
+	.m-fill-info{
+   		background-color: $main-gray-color;
+	   	color: #999;
+	   	line-height: 0.46rem;
+	   	font-size: 0.13rem;
+	    .fill-person{
+			>div{
+		    	background-color: #fff;
+				display: flex;
+	   			margin-bottom: 0.01rem;
+	   			label{
+	   				padding-left: 0.16rem;
+	   				width: 1rem;
+					display: block;
+	   			}
+				input{
+					flex: 1;
+					border: 0;
+				}
+			}
+	   	}
+	   	.fill-place{
+		    background-color: #fff;
+			.area{
+	   			margin-bottom: 0.01rem;
+				display: block;
+		    	background-color: $main-gray-color;
+		    	color: #222;
+		    	padding-bottom: 0.01rem;
+				label{
+		    		background-color: #fff;
+					width: 100%;
+					margin-top: 0.01rem;
+					display: flex;
+					justify-content: space-between;
+		   			padding: 0 0.16rem;
+		   			span{
+		   				display: block;
+		   				i{
+		   					color: #999;
+		   					padding-right: 0.2rem;
+		   				}
+		   				.icon-arrow{
+		   					display: inline-block;
+		   					width: 0.1rem;
+		   					height: 0.16rem;
+		   					margin-top: 0.14rem;
+		   					background-size: 0.4rem 0.16rem;
+		   					background-position: -0.3rem;
+		   				}
+		   			}
+				}
+			}
+			.detail{
+		    	background-color: #fff;
+	   			label{
+	   				padding-left: 0.2rem;
+	   				width: 100%;
+					display: block;
+	   			}
+				textarea{
+					border: 0;
+					padding: 0.05rem 0.2rem;
+					width: 100%;
+					min-height: 1.5rem;
+				}
+			}
+	   	}
+	}
+
+	.m-btn{
+	    position: fixed;
+	    bottom: 0;
+	    width: 100%;
+	    line-height: 0.45rem;
+		background-color: #fafafa;
+		text-align: center;
+		display: flex;
+		border-top: 0.01rem solid $main-gray-color;
+	    &.isAos{
+			border-top: 0.02rem solid $main-gray-color;
+		    .btn-save{
+				border-left: 0.02rem solid $main-gray-color;
+	    	}
+	    }
+	   	.btn-default{
+	   		flex: 1;
+	   		display: flex;
+	   		justify-content: center;
+	   		.default-checkbox{
+	   			margin: 0.15rem 0.1rem 0 0;
+	   			width: 0.15rem;
+	   			height: 0.15rem;
+		   		background-size: 0.4rem 0.16rem;
+	   			&.is-default{
+		   			background-position: -0.15rem 0;
+	   			}
+	   		}
+	   	}
+	    .btn-save{
+			border-left: 0.01rem solid $main-gray-color;
+	    	flex: 1;
+	    	&.canSubmit{
+		    	// background-color: $main-green-color;
+	    	}
+	    }
+	}
+}
+
+//地址插件样式变更
+.mui-poppicker{
+	border: 0;
+	background-color: #f5f5f5;
+	.mui-poppicker-header{
+		line-height: 0.45rem;
+		background-color: #575757;
+		padding: 0;
+		.mui-btn.mui-poppicker-btn-cancel,
+		.mui-btn.mui-btn-blue.mui-poppicker-btn-ok{
+			font-size: 0.14rem;
+			color: #fff;
+			background-color: transparent;
+			border: 0;
+			padding: 0.15rem 0.16rem;
+		}
+	}
+	.mui-pciker-list li{
+		line-height: 0.35rem;
+		font-size: 0.16rem;
+	}
+	.mui-pciker-rule li{
+		line-height: 0.35rem;
+		color: 333;
+	}
+}

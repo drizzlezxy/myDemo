@@ -1,0 +1,35 @@
+{
+  "code": 0,
+  "message": null,
+  "result": {
+    "shop": {
+      "id": "123",
+      "name": "味央",
+      "logo": "http://st1.paopao.126.net/res/images/monkey_index/LOGO.png?3d5c2c9a8d0cd3c360dd93b09a50ebea",
+      "head": "http://paopao.nosdn.127.net/96f073d2-6793-4cb2-a7bc-5888ae3b1d81?imageView&thumbnail=265y270&quality=90&enlarge=1",
+      "imageList": [
+        "http://paopao.nosdn.127.net/34c161ae-3018-43dd-abb0-7729203f741d?imageView&quality=90&thumbnail=254x320",
+        "http://paopao.nosdn.127.net/610196d3-6f65-4ab0-bc8a-4783c93a117e?imageView&quality=90&thumbnail=254x320",
+        "http://paopao.nosdn.127.net/cac429ee-6621-4c27-97a4-cf12e82a586d?imageView&quality=90&thumbnail=254x320"
+      ],
+      "desc": "很好吃的一家店",
+      "gsUrl": "http://st1.paopao.126.net/res/images/wzba.png?81dc7de6a4edfb19b64175acbaeca53d",
+      "address": "杭州市滨江区网商路599号",
+      "openTime": "上午九点-晚上五点",
+      "categoryList": [
+        {
+          "id": "1",
+          "name": "吃的"
+        },
+        {
+          "id": "2",
+          "name": "喝的"
+        },
+        {
+          "id": "3",
+          "name": "玩的"
+        }
+      ]
+    }
+  }
+}

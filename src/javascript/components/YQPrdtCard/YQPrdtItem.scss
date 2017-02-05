@@ -1,0 +1,185 @@
+@import '../../../scss/_config.scss';
+.m-prdtItem {
+    background-color: #fff;
+    display: flex;
+    padding: 0;
+    height: 1rem;
+    margin-bottom: 0.1rem;
+    &.invalid {
+        font-size: 0.13rem;
+        color: #ccc;
+    }
+    .column {
+        position: relative;
+    }
+    .prdtImg,
+    .mask {
+        border-radius: 0.02rem;
+    }
+    .prdtImg {
+        width: 1rem;
+        height: 1rem;
+    }
+    .mask {
+        width: 0.55rem;
+        height: 0.55rem;
+        position: absolute;
+        top: 0.2rem;
+        left: 0.2rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+    }
+    .soldout,
+    .stock {
+        color: #fff;
+        font-size: 0.12rem;
+        width: 0.55rem;
+        text-align: center;
+        line-height: 0.55rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .soldout {
+        // background: url(../../../../res/images/sijiCart/address_icon_soldout@2x.png) no-repeat center;
+        background-size: 0.6rem 0.6rem;
+    }
+    .stock {
+        // background: url(../../../../res/images/sijiCart/address_icon_stock@2x.png) no-repeat center;
+        background-size: 0.6rem 0.6rem;
+    }
+    .detail {
+        height: 100%;
+        padding: 0.1rem;
+        flex: 1;
+        @extend %displayFlex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        @include flexJustifyContent(space-between);
+        .prdtName {
+            position: relative;
+            color: #333;
+            font-size: 0.13rem;
+            .text{
+                line-height: 0.17rem;
+                @extend %two-line-more;
+                max-width: 1.65rem;
+            }
+            .price {
+                text-align: right;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0.6rem;
+                font-weight: bold;
+            }
+        }
+        .handleBuy{
+            @extend %displayFlex;
+            @include flexJustifyContent(space-between);
+            @extend %AlignCenter;
+            .buyNum {
+                display: flex;
+                display: -webkit-flex;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                .explain {
+                    // margin-left: 0.08rem;
+                    color: #fa6565;
+                    font-size: 0.12rem;
+                }
+            }
+            .cartItemDel{
+              display: block;
+              width: 0.15rem;
+              height: 0.16rem;
+              background-image: url(../../../../res/images/DeliveryAddr/routeList_icon@3x.png);
+              background-repeat: no-repeat;
+              background-size: 0.32rem 0.16rem;
+              background-position: -0.16rem 0;
+            }
+        }
+    }
+}
+
+.m-prdtList-invalid {
+    .cartItemDel {
+        display: none;
+    }
+    .detail {
+        .prdtName {
+            .text{
+                color: #ccc !important;
+            }
+            .price {
+                color: #ccc !important;
+            }
+        }
+    }
+}
+
+.m-cart {
+    .m-modal {
+        width: 2.5rem;
+        height: 1.3rem;
+        color: #333;
+        border-radius: 0.075rem;
+        text-align: center;
+        padding: 0.1rem 0 0.15rem;
+        .row1 {
+            position: relative;
+            line-height: 0.74rem;
+            font-size: 0.14rem;
+            &.multi {
+                margin: 0.14rem 0 0.16rem;
+                line-height: 0.22rem;
+            }
+        }
+        .row2 {
+            line-height: 0.31rem;
+            margin: 0 0.2rem;
+            font-size: 0.13rem;
+            @extend %displayFlex;
+            @include flexJustifyContent(center);
+            &.confirm {
+                background-color: #ffe123 !important;
+                width: 1rem;
+                margin: 0 auto;
+            }
+            .item {
+                width: 1rem;
+                background-color: #ffe123 !important;
+                &.no {
+                    margin-left: 0.1rem;
+                    background-color: #d3d5d8 !important;
+                }
+            }
+        }
+    }
+}
+
+.my-swipeout {
+    .my-swipeout-btn {
+        display: flex;
+        flex-direction: column;
+        -webkit-direction: column;
+        background-color: #ff3600;
+        color: #fff;
+        .icon-delete {
+            margin-bottom: 0.06rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1125px) {
+    .m-prdtItem {
+        .soldout {
+            // background: url(../../../../res/images/sijiCart/address_icon_soldout@3x.png) no-repeat center;
+            background-size: 0.6rem 0.6rem;
+        }
+        .stock {
+            // background: url(../../../../res/images/sijiCart/address_icon_stock@3x.png) no-repeat center;
+            background-size: 0.6rem 0.6rem;
+        }
+    }
+}

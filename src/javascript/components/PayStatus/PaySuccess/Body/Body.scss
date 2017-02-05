@@ -1,0 +1,83 @@
+$main-gray-color: #e2e7ea;
+.m-body {
+	padding: 0.1rem;
+
+	.u-route-desc {
+		border-top: 1px solid $main-gray-color;
+		.title {
+			margin-top: 0.1rem;
+			color: #41444e;
+		}
+
+		.desc {
+			color: #8d919c;
+			padding: 0.2rem;
+			
+			.route-title {
+				font-size: 0.15rem;
+				color: #41444e;
+			}
+
+			.route-summary {
+				margin-top: 0.1rem;
+				font-size: 0.13rem;
+				color: #8d919c;
+				line-height: 0.2rem;
+			}
+
+			.route-info {
+				margin-top: 0.1rem;
+				.info-table {
+					font-size: 0.12rem;
+					color: #8d919c;
+
+					.row {
+						margin-top: 0.05rem;
+
+						.row-label {
+							margin-right: 0.05rem;
+						}
+					}
+				}
+			}
+			
+			.price {
+				margin-top: 0.2rem;
+				margin-bottom: 0.3rem;
+
+				.price-label {
+					font-size: 0.12rem;
+					color: 54575f;
+					margin-top: 0.15rem;
+					
+					.price-sign {
+						margin-left: 0.05rem;
+						font-size: 0.13rem;
+						color: #ff3600;
+					}
+					
+					.price-value {
+						font-size: 0.16rem;
+						color: #ff3600;
+					}
+				}
+			}
+		}
+	}
+
+	.u-route-hint {
+		border-top: 1px solid $main-gray-color;
+		padding: 0.1rem;
+		color: #8d919c;
+		font-size: 0.12rem;
+
+		.title {
+			margin-top: 0.1rem;
+			margin-bottom: 0.04rem;
+		}
+
+		.desc {
+			line-height: 0.2rem;
+		}
+	}
+}

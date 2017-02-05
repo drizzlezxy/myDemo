@@ -1,0 +1,29 @@
+$main-green-color: #2bc1bd;
+.m-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+	.u-btn-group {
+		display: flex;
+		display: -webkit-flex;
+		padding: 0.1rem;
+
+		.btn {
+			flex: 1;
+			border: 1px solid $main-green-color;
+			border-radius: 0.02rem;
+			font-size: 0.16rem;
+			color: $main-green-color;
+			background: #fff;
+			line-height: 0.49rem;
+			height: 0.49rem;
+			text-align: center;
+
+			&:last-child {
+				margin-left: 0.1rem;
+			}
+		}
+	}
+}

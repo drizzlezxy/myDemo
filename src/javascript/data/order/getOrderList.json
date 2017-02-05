@@ -1,0 +1,34 @@
+{
+    "code": "0",
+    "message": null,
+    "result":{
+        "hasNext": 0,
+        "nextId": null,
+        "list":[{
+            "id": "68",
+            "orderTime": 1480470768000,
+            "statusStr": "待支付",
+            "shopId": "590",
+            "shopName": "千岛湖",
+            "businessId": "1482",
+            "skuSum": "1",
+            "payPrice": "23.33",
+            "freight": "0.00",
+            "buttonList":[4, 3],
+            "skuList":[{
+                "id": "1009",
+                "prdtId": "1005",
+                "prdtImage": null,
+                "prdtName": "千岛湖精红茶2",
+                "attributeList":[{"id": "", "name": null }],
+                "price": "23.33",
+                "count": 1,
+                "tag": null,
+                "brandNameEN": null,
+                "brandNameZH": null
+            }],
+        "expressNum": null,
+        "payChannel": 2
+        }]
+    }
+}

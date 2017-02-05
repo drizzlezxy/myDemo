@@ -1,0 +1,147 @@
+@import '../_config.scss';
+
+
+@import './icon_sprite2x.scss';
+@media only screen and (min-width: 1125px) {
+  @import './icon_sprite3x.scss';
+}
+
+body{
+	background-color:#fff;
+	padding-bottom: 0.5rem;
+}
+.m-myprofile { 
+	background-color: #f4f4f4;
+	font-size: 0.12rem;
+	color: #222;
+
+    .my-profile-userInfo{
+    	text-align: center;
+    	padding: 0.1rem 0 0.15rem;
+    	background-size: 3rem;
+    	.head-img{
+    		margin: 0 auto;
+    		width:0.58rem;
+    		height:0.58rem;
+    		border-radius: 50%;
+    		background-size: 0.58rem 0.58rem;
+    		img {
+	    		width:0.58rem;
+	    		height:0.58rem;
+	    		border-radius: 50%;
+    		}
+    	}
+    	.nick-name{
+			margin-top: 0.1rem;
+	    	color: #fff;
+    	}
+    }
+    .m-body {
+    	a{
+    		color: #222;
+    	}
+    	.my-profile-order{
+    		position: relative;
+			background-color: #fff;
+      		margin-bottom: 0.06rem;
+      		display: flex;
+      		display: -webkit-flex;
+			.orderItem-container{
+				flex: 1;
+				-webkit-flex: 1;
+				display: inline-block;
+				text-align: center;
+				position: relative;
+				padding: 0.15rem 0;
+				.icon{
+					display: block;
+					width: 0.25rem;
+					height: 0.25rem;
+					margin: 0 auto 0.1rem;
+					background-size: 1.57rem 0.25rem;
+					&.icon-0{
+						background-position: 0;
+					}
+					&.icon-1{
+						background-position: -0.25rem;
+					}
+					&.icon-2{
+						background-position: -0.5rem;
+					}
+					&.icon-3{
+						background-position: -0.75rem;
+					}
+					&.icon-4{
+						background-position: -1rem;
+					}
+				}
+				.list-item-count{
+					display: block;
+					width: 0.16rem;
+					line-height: 0.16rem;
+					border-radius: 50%;
+					position: absolute;
+					top: 0.1rem;
+					right: 0.16rem;
+					background-color: #ff3600;
+					color: #fff;
+					font-size: 0.1rem;
+				}
+				&:not(:first-child):after{
+					content: "";
+					display: block;
+					position: absolute;
+					top: 25%;
+					left: 0;
+					height: 50%;
+					width: 0.01rem;
+					background-color: #e5e5e5;
+				}
+			}
+    	}
+        .my-profile-items{
+			background-color: #fff;
+      		padding: 0 0.22rem 0 0.16rem;
+      		li{
+      			&:not(:first-child){
+      				.item-container{
+      					border-top: 0.01rem solid #e5e5e5;
+      					&.isAos{
+	      					border-top: 0.02rem solid #e5e5e5;
+      					}
+      				}
+      			}
+	        	.item-container{
+      				line-height: 0.48rem;
+	        		display: flex;
+	        		display: -webkit-flex;
+		        	.item-head-icon{
+		        		display: block;
+		        		width: 0.16rem;
+		        		background-size: 1.57rem 0.25rem;
+      					background-repeat: no-repeat;
+		        		&.icon-0{
+		        			background-position: -1.25rem 0.16rem;
+		        		}
+		        		&.icon-1{
+		        			background-position: -1.42rem 0.16rem;
+		        		}
+		        	}
+		        	.item-name{
+		        		flex: 1;
+		        		-webkit-flex: 1;
+		        		padding-left: 0.1rem;
+		        	}
+		        	.item-arrows-icon{
+		        		display: block;
+		        		width: 0.1rem;
+		        		background-size: 0.4rem 0.16rem;
+		        		background-position: -0.3rem;
+      					background-repeat: no-repeat;
+		        	}
+		        }
+		    }
+        }
+        
+    }
+}

@@ -1,0 +1,555 @@
+[
+  {
+    "month": "5月",
+    "activeIndex": 0,
+    "swipeTop": 0.45,
+    "cloneCount": 0,
+    "swipeItems": [
+      {
+        "id": 2,
+        "likes": false,
+        "image": "2.jpg",
+        "title": "新疆新鲜红颜草莓",
+        "desc": "鲜美红嫩果肉多汁"
+      },
+      {
+        "id": 15,
+        "likes": false,
+        "image": "15.jpg",
+        "title": "新疆特级无沙黑桑葚",
+        "desc": "人工精选无沙更营养"
+      },
+      {
+        "id": 24,
+        "likes": false,
+        "image": "24.jpg",
+        "title": "新疆哈密油桃",
+        "desc": "果实脆香 入口香脆"
+      },
+      {
+        "id": 20,
+        "likes": false,
+        "image": "20.jpg",
+        "title": "新疆伽师一级西梅",
+        "desc": "核小肉厚 弹韧无渣"
+      }
+    ]
+  },
+  {
+    "month": "6月",
+    "activeIndex": 0,
+    "swipeTop": 0.45,
+    "cloneCount": 0,
+    "swipeItems": [
+      {
+        "id": 2,
+        "likes": false,
+        "image": "2.jpg",
+        "title": "新疆新鲜红颜草莓",
+        "desc": "鲜美红嫩果肉多汁"
+      },
+      {
+        "id": 4,
+        "likes": false,
+        "image": "4.jpg",
+        "title": "新疆长香玉哈密瓜",
+        "desc": "味甘如蜜 果肉细腻"
+      },
+      {
+        "id": 15,
+        "likes": false,
+        "image": "15.jpg",
+        "title": "新疆特级无沙黑桑葚",
+        "desc": "人工精选无沙更营养"
+      },
+      {
+        "id": 19,
+        "likes": false,
+        "image": "19.jpg",
+        "title": "新疆下野地西瓜 ",
+        "desc": "汁多味甜 质细爽口"
+      },
+      {
+        "id": 20,
+        "likes": false,
+        "image": "20.jpg",
+        "title": "新疆伽师一级西梅",
+        "desc": "核小肉厚 弹韧无渣"
+      },
+      {
+        "id": 21,
+        "likes": false,
+        "image": "21.jpg",
+        "title": "新疆轮台小白杏",
+        "desc": "优质鲜食杏"
+      },
+      {
+        "id": 24,
+        "likes": false,
+        "image": "24.jpg",
+        "title": "新疆哈密油桃",
+        "desc": "果实脆香 入口香脆"
+      }
+    ]
+  },
+  {
+    "month": "7月",
+    "activeIndex": 0,
+    "swipeTop": 0.45,
+    "cloneCount": 0,
+    "swipeItems": [
+      {
+        "id": 2,
+        "likes": false,
+        "image": "2.jpg",
+        "title": "新疆新鲜红颜草莓",
+        "desc": "鲜美红嫩果肉多汁"
+      },
+      {
+        "id": 3,
+        "likes": false,
+        "image": "3.jpg",
+        "title": "新疆特级中宁枸杞",
+        "desc": "滋补正品 开袋即食"
+      },
+      {
+        "id": 4,
+        "likes": false,
+        "image": "4.jpg",
+        "title": "新疆长香玉哈密瓜",
+        "desc": "味甘如蜜 果肉细腻"
+      },
+      {
+        "id": 11,
+        "likes": false,
+        "image": "11.jpg",
+        "title": "新疆新鲜黄肉蟠桃",
+        "desc": "皮韧易剥 汁多甘厚"
+      },
+      {
+        "id": 17,
+        "likes": false,
+        "image": "17.jpg",
+        "title": "阿图什市新鲜无花果",
+        "desc": "清甜可口 软糯多汁"
+      },
+      {
+        "id": 18,
+        "likes": false,
+        "image": "18.jpg",
+        "title": "新疆特产无花果干",
+        "desc": "品质优良 甘甜多汁"
+      },
+      {
+        "id": 19,
+        "likes": false,
+        "image": "19.jpg",
+        "title": "新疆下野地西瓜 ",
+        "desc": "汁多味甜 质细爽口"
+      },
+      {
+        "id": 20,
+        "likes": false,
+        "image": "20.jpg",
+        "title": "新疆伽师一级西梅",
+        "desc": "核小肉厚 弹韧无渣"
+      },
+      {
+        "id": 21,
+        "likes": false,
+        "image": "21.jpg",
+        "title": "新疆轮台小白杏",
+        "desc": "优质鲜食杏"
+      },
+      {
+        "id": 22,
+        "likes": false,
+        "image": "22.jpg",
+        "title": "新疆库车杏干",
+        "desc": "口感细腻 颗粒饱满"
+      },
+      {
+        "id": 24,
+        "likes": false,
+        "image": "24.jpg",
+        "title": "新疆哈密油桃",
+        "desc": "果实脆香 入口香脆"
+      }
+    ]
+  },
+  {
+    "month": "8月",
+    "activeIndex": 0,
+    "swipeTop": 0.45,
+    "cloneCount": 0,
+    "swipeItems": [
+      {
+        "id": 3,
+        "likes": false,
+        "image": "3.jpg",
+        "title": "新疆特级中宁枸杞",
+        "desc": "滋补正品 开袋即食"
+      },
+      {
+        "id": 4,
+        "likes": false,
+        "image": "4.jpg",
+        "title": "新疆长香玉哈密瓜",
+        "desc": "味甘如蜜 果肉细腻"
+      },
+      {
+        "id": 6,
+        "likes": false,
+        "image": "6.jpg",
+        "title": "新疆纸皮特级核桃",
+        "desc": "手捏即开 原香清脆"
+      },
+      {
+        "id": 8,
+        "likes": false,
+        "image": "8.jpg",
+        "title": "新疆西周伽师瓜",
+        "desc": "鲜美多汁 肉质细腻"
+      },
+      {
+        "id": 9,
+        "likes": false,
+        "image": "9.jpg",
+        "title": "乌鲁木齐开心果",
+        "desc": "香脆口感 咸味香甜"
+      },
+      {
+        "id": 11,
+        "likes": false,
+        "image": "11.jpg",
+        "title": "新疆新鲜黄肉蟠桃",
+        "desc": "皮韧易剥 汁多甘厚"
+      },
+      {
+        "id": 13,
+        "likes": false,
+        "image": "13.jpg",
+        "title": "新疆吐鲁番葡萄",
+        "desc": "似珍珠玛瑙 晶莹剔透"
+      },
+      {
+        "id": 14,
+        "likes": false,
+        "image": "14.jpg",
+        "title": "新疆特产葡萄干",
+        "desc": "自然风干 营养美味"
+      },
+      {
+        "id": 17,
+        "likes": false,
+        "image": "17.jpg",
+        "title": "阿图什市新鲜无花果",
+        "desc": "清甜可口 软糯多汁"
+      },
+      {
+        "id": 18,
+        "likes": false,
+        "image": "18.jpg",
+        "title": "新疆特产无花果干",
+        "desc": "品质优良 甘甜多汁"
+      },
+      {
+        "id": 19,
+        "likes": false,
+        "image": "19.jpg",
+        "title": "新疆下野地西瓜 ",
+        "desc": "汁多味甜 质细爽口"
+      },
+      {
+        "id": 21,
+        "likes": false,
+        "image": "21.jpg",
+        "title": "新疆轮台小白杏",
+        "desc": "优质鲜食杏"
+      },
+      {
+        "id": 22,
+        "likes": false,
+        "image": "22.jpg",
+        "title": "新疆库车杏干",
+        "desc": "口感细腻 颗粒饱满"
+      },
+      {
+        "id": 23,
+        "likes": false,
+        "image": "23.jpg",
+        "title": "新疆木垒生鹰嘴豆",
+        "desc": "手工精选 颗粒饱满"
+      },
+      {
+        "id": 24,
+        "likes": false,
+        "image": "24.jpg",
+        "title": "新疆哈密油桃",
+        "desc": "果实脆香 入口香脆"
+      }
+    ]
+  },
+  {
+    "month": "9月",
+    "activeIndex": 0,
+    "swipeTop": 0.45,
+    "cloneCount": 0,
+    "swipeItems": [
+      {
+        "id": 1,
+        "likes": false,
+        "image": "1.jpg",
+        "title": "新疆薄壳巴旦木果",
+        "desc": "至简工艺 香脆可口"
+      },
+      {
+        "id": 3,
+        "likes": false,
+        "image": "3.jpg",
+        "title": "新疆特级中宁枸杞",
+        "desc": "滋补正品 开袋即食"
+      },
+      {
+        "id": 5,
+        "likes": false,
+        "image": "5.jpg",
+        "title": "新疆特产海棠果",
+        "desc": "口感酸甜 健康食品"
+      },
+      {
+        "id": 6,
+        "likes": false,
+        "image": "6.jpg",
+        "title": "新疆纸皮特级核桃",
+        "desc": "手捏即开 原香清脆"
+      },
+      {
+        "id": 8,
+        "likes": false,
+        "image": "8.jpg",
+        "title": "新疆西周伽师瓜",
+        "desc": "鲜美多汁 肉质细腻"
+      },
+      {
+        "id": 9,
+        "likes": false,
+        "image": "9.jpg",
+        "title": "乌鲁木齐开心果",
+        "desc": "香脆口感 咸味香甜"
+      },
+      {
+        "id": 10,
+        "likes": false,
+        "image": "10.jpg",
+        "title": "新疆库尔勒香梨",
+        "desc": "皮薄肉脆 甘甜多汁"
+      },
+      {
+        "id": 11,
+        "likes": false,
+        "image": "11.jpg",
+        "title": "新疆新鲜黄肉蟠桃",
+        "desc": "皮韧易剥 汁多甘厚"
+      },
+      {
+        "id": 13,
+        "likes": false,
+        "image": "13.jpg",
+        "title": "新疆吐鲁番葡萄",
+        "desc": "似珍珠玛瑙 晶莹剔透"
+      },
+      {
+        "id": 14,
+        "likes": false,
+        "image": "14.jpg",
+        "title": "新疆特产葡萄干",
+        "desc": "自然风干 营养美味"
+      },
+      {
+        "id": 16,
+        "likes": false,
+        "image": "16.jpg",
+        "title": "喀什噶尔新鲜石榴",
+        "desc": "晶莹饱满 鲜甜多汁"
+      },
+      {
+        "id": 17,
+        "likes": false,
+        "image": "17.jpg",
+        "title": "阿图什市新鲜无花果",
+        "desc": "清甜可口 软糯多汁"
+      },
+      {
+        "id": 18,
+        "likes": false,
+        "image": "18.jpg",
+        "title": "新疆特产无花果干",
+        "desc": "品质优良 甘甜多汁"
+      },
+      {
+        "id": 19,
+        "likes": false,
+        "image": "19.jpg",
+        "title": "新疆下野地西瓜 ",
+        "desc": "汁多味甜 质细爽口"
+      },
+      {
+        "id": 1,
+        "likes": false,
+        "image": "1.jpg",
+        "title": "新疆库车杏干",
+        "desc": "口感细腻 颗粒饱满"
+      },
+      {
+        "id": 23,
+        "likes": false,
+        "image": "23.jpg",
+        "title": "新疆木垒生鹰嘴豆",
+        "desc": "手工精选 颗粒饱满"
+      },
+      {
+        "id": 24,
+        "likes": false,
+        "image": "24.jpg",
+        "title": "新疆哈密油桃",
+        "desc": "果实脆香 入口香脆"
+      }
+    ]
+  },
+  {
+    "month": "10月",
+    "activeIndex": 0,
+    "swipeTop": 0.45,
+    "cloneCount": 0,
+    "swipeItems": [
+      {
+        "id": 1,
+        "likes": false,
+        "image": "1.jpg",
+        "title": "新疆薄壳巴旦木果",
+        "desc": "至简工艺 香脆可口"
+      },
+      {
+        "id": 7,
+        "likes": false,
+        "image": "7.jpg",
+        "title": "新疆特产和田大枣",
+        "desc": "风干成熟 肉多紧实"
+      },
+      {
+        "id": 8,
+        "likes": false,
+        "image": "8.jpg",
+        "title": "新疆西周伽师瓜",
+        "desc": "鲜美多汁 肉质细腻"
+      },
+      {
+        "id": 9,
+        "likes": false,
+        "image": "9.jpg",
+        "title": "乌鲁木齐开心果",
+        "desc": "香脆口感 咸味香甜"
+      },
+      {
+        "id": 10,
+        "likes": false,
+        "image": "10.jpg",
+        "title": "新疆库尔勒香梨",
+        "desc": "皮薄肉脆 甘甜多汁"
+      },
+      {
+        "id": 12,
+        "likes": false,
+        "image": "12.jpg",
+        "title": "阿克苏冰糖心苹果",
+        "desc": "冰糖心 脆甜多汁"
+      },
+      {
+        "id": 13,
+        "likes": false,
+        "image": "13.jpg",
+        "title": "新疆吐鲁番葡萄",
+        "desc": "似珍珠玛瑙 晶莹剔透"
+      },
+      {
+        "id": 14,
+        "likes": false,
+        "image": "14.jpg",
+        "title": "新疆特产葡萄干",
+        "desc": "自然风干 营养美味"
+      },
+      {
+        "id": 16,
+        "likes": false,
+        "image": "16.jpg",
+        "title": "喀什噶尔新鲜石榴",
+        "desc": "晶莹饱满 鲜甜多汁"
+      },
+      {
+        "id": 17,
+        "likes": false,
+        "image": "17.jpg",
+        "title": "阿图什市新鲜无花果",
+        "desc": "清甜可口 软糯多汁"
+      },
+      {
+        "id": 18,
+        "likes": false,
+        "image": "18.jpg",
+        "title": "新疆特产无花果干",
+        "desc": "品质优良 甘甜多汁"
+      },
+      {
+        "id": 19,
+        "likes": false,
+        "image": "19.jpg",
+        "title": "新疆下野地西瓜 ",
+        "desc": "汁多味甜 质细爽口"
+      },
+      {
+        "id": 1,
+        "likes": false,
+        "image": "1.jpg",
+        "title": "新疆库车杏干",
+        "desc": "口感细腻 颗粒饱满"
+      },
+      {
+        "id": 23,
+        "likes": false,
+        "image": "23.jpg",
+        "title": "新疆木垒生鹰嘴豆",
+        "desc": "手工精选 颗粒饱满"
+      }
+    ]
+  },
+  {
+    "month": "11月",
+    "activeIndex": 0,
+    "swipeTop": 0.45,
+    "cloneCount": 0,
+    "swipeItems": [
+      {
+        "id": 8,
+        "likes": false,
+        "image": "8.jpg",
+        "title": "新疆西周伽师瓜",
+        "desc": "鲜美多汁 肉质细腻"
+      },
+      {
+        "id": 10,
+        "likes": false,
+        "image": "10.jpg",
+        "title": "新疆库尔勒香梨",
+        "desc": "皮薄肉脆 甘甜多汁"
+      },
+      {
+        "id": 24,
+        "likes": false,
+        "image": "24.jpg",
+        "title": "新疆哈密油桃",
+        "desc": "果实脆香 入口香脆"
+      }
+    ]
+  }
+]

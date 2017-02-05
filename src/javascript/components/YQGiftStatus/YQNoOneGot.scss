@@ -1,0 +1,32 @@
+@import '../../../scss/_config.scss';
+
+.m-YQNoOneGot {
+	padding: 1.65rem 0 0;
+	.content {
+		.img {
+			margin: 0 auto;
+			width: 0.9rem;
+			height: 0.9rem;
+			background-size: 0.9rem 0.9rem;
+			background-image: url(../../../../res/images/YQGift/giftBox.png);
+		}
+		.txt-go-treat {
+			margin: 0.14rem 0 0.77rem;
+			text-align: center;
+			line-height: 0.24rem;
+			font-size: 0.16rem;
+			color: #666;
+		}
+		.btn-go-treat {
+			margin: 0 auto;
+			display: block;
+	    	width: 2.07rem;
+	    	line-height: 0.5rem;
+	    	background-color: #d84343;
+	    	border: 0;
+	    	border-radius: 0.02rem;
+	    	color: #fff;
+	    	font-size: 0.16rem;
+		}
+	}
+}

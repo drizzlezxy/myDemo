@@ -1,0 +1,55 @@
+@import '../_config.scss';
+html, body, #app {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.API-error {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.m-yqgiftbox { 
+	width: 3.26rem;
+	height: 4.36rem;
+	margin: 0.8rem auto 0;
+	background-image: url(http://sjyxoss.yiqiguang.com/open_box.png);
+	background-size: 3.26rem 4.36rem;
+	.content {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		padding-top: 2.13rem;
+		font-size: 0.17rem;
+		color: #f2cf96;
+		text-align: center;
+		&.closed {
+			.btn-open {
+				display: block;
+				width: 0.96rem;
+				height: 0.96rem;
+				background-image: url(http://sjyxoss.yiqiguang.com/txt_open.png);
+				background-size: 0.96rem 0.96rem;
+				border-radius: 50%;
+				position: absolute;
+				top: 1.8rem;
+				left: 1.15rem;
+				border: 0;
+			}
+			.txt-who {
+				margin-top: 1.04rem;
+			}
+		}
+		&.hasPwd {
+			.txt-noti {
+				margin: 0.69rem auto 0.23rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+    "code": 0,
+    "message": "",
+    "result": {
+        "count": 36243,
+        "data": [
+            {
+                "benediction": "为了给你送礼，我们家今年冬天少买了200斤大白菜！",
+                "createTime": "2017-01-03 00:00:00",
+                "giftHeadUrl": "",
+                "giftId": 88378,
+                "status": 1
+            },
+            {
+                "benediction": "新春快乐！万事大吉！合家欢乐！财源广进！吉祥如意！花开富贵！家徒四壁！",
+                "createTime": "2017-01-03 00:00:00",
+                "giftHeadUrl": "",
+                "giftId": 88379,
+                "status": 2
+            },
+            {
+                "benediction": "新春快乐！万事大吉！合家欢乐！财源广进！吉祥如意！花开富贵！家徒四壁！",
+                "createTime": "2017-01-03 00:00:00",
+                "giftHeadUrl": "",
+                "giftId": 88380,
+                "status": 3
+            },
+            {
+                "benediction": "新春快乐！万事大吉！合家欢乐！财源广进！吉祥如意！花开富贵！家徒四壁！",
+                "createTime": "2017-01-03 00:00:00",
+                "giftHeadUrl": "",
+                "giftId": 88379,
+                "status": 4
+            }
+
+        ],
+        "totalCount": 100
+    }
+}

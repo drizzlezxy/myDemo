@@ -1,0 +1,59 @@
+@import '../_config.scss';
+
+.m-joingroup { 
+	margin-bottom: 0.6rem;
+    .m-header {
+        
+    }
+
+    .m-body {
+        
+    }
+
+    .m-footer {
+    	position: fixed;
+    	z-index: 999;
+    	bottom: 0;
+    	left: 0;
+    	@extend %displayFlex;
+    	width: 100%;
+    	height: 0.6rem;
+    	padding: 0.1rem 0.11rem;
+    	background: rgba(0, 0, 0, 0.65);
+
+
+		.share, 
+		.join {
+			@extend %AlignCenter;
+			@include flexJustifyContent(center);
+			text-align: center;
+			color: #222;
+			cursor: pointer;
+			border-radius: 0.04rem;
+			font-size: 0.15rem;
+			line-height: 0.4rem;
+		}
+	
+        .share {
+			@extend %displayFlex;
+			@include flexWeight(166);
+			background: #fff;
+        	
+        	.share-icon {
+				display: inline-block;
+				width: 0.16rem;
+				height: 0.16rem;
+				margin-right: 0.07rem;
+				background: url(../../../res/images/JoinGroup/icon/share@3X.png) no-repeat;
+				background-size: contain;
+        	}
+
+        }
+
+        .join {
+        	margin-left: 0.1rem;
+			@include flexWeight(410);
+			background: #ffe123;
+        }
+    }
+}

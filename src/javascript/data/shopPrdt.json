@@ -1,0 +1,124 @@
+{
+  "code": 0,
+  "message": "",
+  "result": {
+    "prdtList": [
+      {
+        "name": "桑树糕桑树糕桑树糕桑树糕桑树糕桑树糕",
+        "image": "../../res/imgs/product.png",
+        "skuList": [
+          {
+            "id": "123",
+            "spec": "100g",
+            "originPrice": "129",
+            "payPrice": "39",
+            "count": 3,
+            "status": 2
+          },
+          {
+            "id": "145",
+            "spec": "100g*2",
+            "originPrice": "129",
+            "payPrice": "39",
+            "count": 5,
+            "status": 1
+          },
+          {
+            "id": "198",
+            "spec": "100g*4",
+            "originPrice": "129",
+            "payPrice": "59",
+            "count": 4,
+            "status": 1
+          },
+          {
+            "id": "117",
+            "spec": "100g*6",
+            "originPrice": "129",
+            "payPrice": "29",
+            "count": 5,
+            "status": 3
+          },
+          {
+            "id": "189",
+            "spec": "100g*8",
+            "originPrice": "129",
+            "payPrice": "99",
+            "count": 5,
+            "status": 2
+          },
+          {
+            "id": "126",
+            "spec": "100g*10",
+            "originPrice": "129",
+            "payPrice": "79",
+            "count": 5,
+            "status": 3
+          }
+        ]
+      },
+      {
+        "name": "三文鱼",
+        "image": "../../res/imgs/product.png",
+        "skuList": [
+          {
+            "id": "126",
+            "spec": "100g*4",
+            "originPrice": "146",
+            "payPrice": "39",
+            "count": 3,
+            "status": 2
+          },
+          {
+            "id": "126",
+            "spec": "100g*6",
+            "originPrice": "167",
+            "payPrice": "39",
+            "count": 5,
+            "status": 2
+          },
+          {
+            "id": "126",
+            "spec": "100g*8",
+            "originPrice": "79",
+            "payPrice": "39",
+            "count": 5,
+            "status": 2
+          }
+        ]
+      },
+      {
+        "name": "蓝莓",
+        "image": "../../res/imgs/product.png",
+        "skuList": [
+          {
+            "id": "126",
+            "spec": "100g*2",
+            "originPrice": "119",
+            "payPrice": "39",
+            "count": 3,
+            "status": 3
+          },
+          {
+            "id": "126",
+            "spec": "100g*4",
+            "originPrice": "169",
+            "payPrice": "39",
+            "count": 5,
+            "status": 3
+          },
+          {
+            "id": "126",
+            "spec": "100g*6",
+            "originPrice": "99",
+            "payPrice": "39",
+            "count": 5,
+            "status": 3
+          }
+        ]
+      }
+    ],
+    "hasNext": 1,
+    "nextId": "11"
+  }
+}

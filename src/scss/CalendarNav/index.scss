@@ -1,0 +1,183 @@
+@import '../_config.scss';
+html, body {
+	background: #fafafa;
+	height: 100%;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.m-calendarnav { 
+	background: #fafafa;
+    .m-header {
+    	position: fixed;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	overflow-x: auto;
+    	background: #ffffff;
+    	z-index: 999;
+
+        .calnav-list {
+        	//border-bottom: 1px solid #f4f4f4;
+
+        	.calnav-list-item {
+        		position: relative;
+        		float: left;
+        		width: 0.50rem;
+				height: 0.55rem;
+				padding-top:0.1rem;
+				padding-bottom:0.1rem;
+				cursor: pointer;
+				background: #ffffff;
+
+				&.active {
+					.month,
+					.short {
+						background: #ffe123;
+						color: #222222;
+					}
+				}
+
+				.month {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					width: 0.35rem;
+					height: 0.35rem;
+					margin-right: 0.2rem;
+					border-radius: 50%;
+					text-align: center;
+					line-height: 0.35rem;
+					transform: translate3d(-50%, -50%, 0);
+					-webkit-transform: translate3d(-50%, -50%, 0);
+
+				}
+
+				.month {
+					font-size: 0.14rem;
+					color: #222222;
+				}
+
+				&:first-child {
+					margin-left: 0.05rem;
+				}
+
+				/* 最后一项没有右边框 */
+				&:first-child {
+					padding-right: 0;
+				}
+        	}
+        }
+    }
+
+    .m-body {
+    	position: relative;
+    	top: 0.55rem;
+    	width: 100%;
+    	height: 100%;
+		background: #ffffff;
+		-webkit-overflow-scrolling: touch;
+
+    }
+
+    .m-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0.49rem;
+        z-index: 999999;
+        background: #ffffff;
+        
+        .tabbar-list {
+        	height: 100%;
+        	@extend %displayFlex;
+
+        	cursor: pointer;
+
+        	.tabbar-list-item {
+        		@extend %flexGrow;
+        		@extend %AlignCenter;
+        		@include flexJustifyContent(center);
+
+				padding-top: 0.04rem;
+        		text-align: center;
+        		border-right: 1px solid #ededed;
+				
+        		.tabbar-icon,
+        		.tabbar-text {
+        			@extend %flexGrow;
+	        		@extend %AlignCenter;
+	        		@include flexJustifyContent(center);
+        		}
+
+        		&.active {
+        			//background: #ffe123;
+        			
+        			.tabbar-text {
+        				&.xinjiang {
+        					color: #69b643;
+        				}
+
+        				&.yunnan {
+        					color: #8261c3;
+        				}
+
+        				&.hainan {
+        					color: #3c93ec;
+        				}
+
+        				&.dongsansheng {
+        					color: #e0853c;
+        				}
+        			}
+        		}
+
+        		.tabbar-icon {
+        			width: 0.25rem;
+        			height: 0.25rem;
+        			display: inline-block;
+        			background-size: 100% !important;
+
+					&.xinjiang {
+						background: url(../../../res/images/CalendarNav/icon/xinjiang.png) no-repeat;
+					}
+
+					&.dongsansheng {
+						background: url(../../../res/images/CalendarNav/icon/dongsansheng.png) no-repeat;
+					}
+
+					&.hainan {
+						background: url(../../../res/images/CalendarNav/icon/hainan.png) no-repeat;
+					}
+
+					&.yunnan {
+						background: url(../../../res/images/CalendarNav/icon/yunnan.png) no-repeat;
+					}
+
+					&.active {
+						
+						&.xinjiang {
+							background: url(../../../res/images/CalendarNav/icon/xinjiang_active.png) no-repeat;
+						}
+
+						&.dongsansheng {
+							background: url(../../../res/images/CalendarNav/icon/dongsansheng_active.png) no-repeat;
+						}
+
+						&.hainan {
+							background: url(../../../res/images/CalendarNav/icon/hainan_active.png) no-repeat;
+						}
+
+						&.yunnan {
+							background: url(../../../res/images/CalendarNav/icon/yunnan_active.png) no-repeat;
+						}
+					}
+        		}
+
+        		&:last-child {
+					border-right: 0;
+        		}
+        	}
+        }
+    }
+}

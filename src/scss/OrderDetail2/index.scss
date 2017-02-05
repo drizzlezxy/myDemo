@@ -1,0 +1,125 @@
+@import '../_config.scss';
+
+html, body {
+	width: 100%;
+	background: #efefef;
+}
+
+.m-orderdetail2 { 
+	width: 100%;
+	padding-bottom: 0.5rem;
+
+	.m-header,
+	.m-body,
+	.m-footer {
+		width: 100%;
+	}
+
+    .m-header {
+    	padding: 0.1rem 0.11rem 0 0.11rem;
+        margin-bottom: 0.1rem;
+        background: #fff;
+    }
+
+    .m-body {
+    	margin-bottom: 0.1rem;
+
+        .order-footer {
+        	position: relative;
+	    	padding: 0.2rem 0.1rem;
+	    	background: #fff;
+
+	        .btn-group {
+	        	position: absolute;
+	        	right: 0.15rem;
+	        	top: 0;
+	        	padding: 0.05rem;
+	        	width: 0.8rem;
+
+	        	&.pull-right {
+	        		text-align: right;
+	        	}
+
+	        	.btn {
+					cursor: pointer;
+		        	width: 0.8rem;
+		        	height: 0.28rem;
+		        	line-height: 0.28rem;
+		        	color: #222;
+		        	border-radius: 0.04rem;
+		        	border: none;
+		        	text-align: center;
+		        	&.btn-confirm {
+						background: #ffe123;
+		        	}
+		        }
+	        }
+	    }
+    }
+
+    .m-address,
+    .m-delivery,
+    .m-pay {
+		width: 100%;
+		background: #fff;
+
+		tr {
+			td {
+				padding: 0.1rem 0.11rem;
+				border-bottom: 1px solid #eeeeee;
+				vertical-align: top;
+
+				&.cell-attr {
+					color: #999;
+					width: 0.8rem;
+				}
+
+				&.cell-val {
+					color: #222;
+					padding-left: 0.07rem;
+					
+				}
+			}
+		}
+    }
+
+    .m-address {
+		margin-bottom: 0.1rem;
+    }
+
+
+}
+
+.m-modal{
+        width: 2.5rem;
+        height: 1.3rem;
+        color: #333;
+        border-radius: 0.075rem;
+        text-align: center;
+        padding: 0.1rem 0 0.15rem;
+        .row1 {
+            position: relative;
+            line-height: 0.74rem;
+            font-size: 0.14rem;
+        }
+        .row2 {
+            line-height: 0.31rem;
+            margin: 0 0.2rem;
+            font-size: 0.13rem;
+            @extend %displayFlex;
+            @include flexJustifyContent(center);
+            &.confirm {
+                background-color: #ffe123 !important;
+                width: 1rem;
+                margin: 0 auto;
+            }
+            .item {
+                width: 1rem;
+                background-color: #ffe123 !important;
+                &.no {
+                    margin-left: 0.1rem;
+                    background-color: #d3d5d8 !important;
+                }
+            }
+        }
+}

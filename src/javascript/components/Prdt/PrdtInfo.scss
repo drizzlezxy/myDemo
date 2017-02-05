@@ -1,0 +1,83 @@
+.m-prdt {
+    margin: 0.14rem 0.14rem 0.1rem;
+    .name {
+        font-size: 0.16rem;
+        color: #41444e;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .desc {
+        margin: 0.09rem 0 0.05rem;
+        font-size: 0.13rem;
+        color: #8d919c;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .price {
+        font-size: 0.15rem;
+        color: #ee1c25;
+        margin-bottom: 0.1rem;
+        .pay-price {
+            font-size: 0.21rem;
+            color: #ee1c25;
+        }
+        .origin-price {
+            font-size: 0.13rem;
+            color: #ccc;
+            text-decoration: line-through;
+            margin-left: 0.03rem
+        }
+    }
+    .m-action {
+        margin: 0.1rem 0;
+        padding: 0.1rem 0;
+        border-top: 0.005rem #f3f3f3 solid;
+        border-bottom: 0.005rem #f3f3f3 solid;
+        .row {
+            margin-bottom: 0.06rem;
+        }
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .value {
+            margin-left: 0.05rem;
+            display: inline-block;
+            color: #8e919c;
+        }
+    }
+    .slogan {
+        width: 100%;
+        height: 0.45rem;
+        line-height: 0.45rem;
+        .item {
+            display: inline-block;
+            width: 33.3%;
+            font-size: 0.12rem;
+            color: #41444e;
+            text-align: center;
+        }
+        .icon-slogan {
+            display: inline-block;
+            margin-right: 0.04rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+.m-foot-base {
+    position: fixed;
+    width: 100%;
+    height: 0.49rem;
+    line-height: 0.49rem;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #95e0de;
+    color: #fff;
+    font-size: 0.16rem;
+    text-align: center;
+}
+

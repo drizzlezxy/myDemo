@@ -1,0 +1,111 @@
+$main-green-color: #2bc1bd;
+$main-gray-color: #dedede;
+.m-deliveryaddr { 
+	overflow: hidden;
+	background-color: $main-gray-color;
+    .m-noList {
+        
+    }
+	.m-addr-list{
+		.empty{
+			background: #fff;
+			padding-top: 1rem;
+			line-height: 1.5rem;
+			text-align: center;
+		}
+		.place-holder{
+			height: 1.5rem;
+			background-color: #fff;
+		}
+		&.select {
+			.select-icon {
+				position: absolute;
+				top: 0.5rem;
+				left: 0.11rem;
+				width: 0.18rem;
+				height: 0.18rem;
+				background-size: 0.17rem 0.17rem;
+				background-repeat: no-repeat;
+				&.icon-select {
+				  background-image: url(../../../res/images/Common/group_radio_select@3x.png);
+				}
+				&.icon-unselect {
+				  background-image: url(../../../res/images/Common/group_radio_not_select@3x.png);
+				}
+			}
+			.item-content{
+				padding: 0.15rem 0.22rem 0.25rem 0.44rem !important;
+			}
+			.item-icon{
+				right: 0.22rem !important;
+			}
+		}
+		.list-item{
+			position: relative;
+			color: #666;
+			&.default{
+				color: #222;
+			}
+			.item-icon{
+				position: absolute;
+				top: 0.15rem;
+				right: 0.33rem;
+				span{
+					display: inline-block;
+					width: 0.19rem;
+					height: 0.19rem;
+					background-size: 0.38rem 0.19rem;
+					&.icon-edit{
+						margin-right: 0.08rem;
+						@media only screen and (min-width: 1125px) {
+							background-image: url(../../../res/images/DeliveryAddr/routeList_icon@3x.png);
+						}
+						background-image: url(../../../res/images/DeliveryAddr/routeList_icon@2x.png);
+					}
+					&.icon-delete{
+						@media only screen and (min-width: 1125px) {
+							background-image: url(../../../res/images/DeliveryAddr/routeList_icon@3x.png);
+						}
+						background-image: url(../../../res/images/DeliveryAddr/routeList_icon@2x.png);
+						background-position: -0.19rem 0;
+					}
+				}
+			}
+			.item-content{
+				padding: 0.15rem 0.33rem 0.25rem;
+				line-height: 0.28rem;
+				font-size: 0.13rem;
+				margin-bottom: 0.01rem;
+				background-color: #fff;
+				.is-default{
+					color: #ff3600;
+				}
+				.place{
+					margin-top: 0.1rem;
+					line-height: 0.18rem;
+				}
+			}
+		}
+	}
+    .m-btn-add{
+    	background-color: #fff;
+    	position: fixed;
+    	bottom: 0;
+    	padding: 0.5rem 0.35rem;
+    	width: 100%;
+    	border-top: 0.01rem solid $main-gray-color;
+    	&.isAos{
+	    	border-top: 0.02rem solid $main-gray-color;
+	    	span{
+	    		border: 0.02rem solid #222;
+	    	}
+    	}
+	    span{
+    		line-height: 0.35rem;
+    		display: block;
+    		border: 0.01rem solid #222;
+    		border-radius: 0.03rem;
+    		text-align: center;
+    	}
+    }
+}

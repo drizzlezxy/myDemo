@@ -1,0 +1,75 @@
+.m-confirm-mask {
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	filter: alpah(opacity=50);
+	background: #000;
+	z-index: 99999;
+}
+.m-confirm {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 100000;
+	width: 2.8rem;
+	min-height: 1.7rem;
+	transform:translate(-50%, -60%);
+	border: 1px solid #d5d5d5;
+	border-radius: 0.08rem;
+	background: #fff;
+	box-shadow: 2px 2px 4px #000;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+
+	.m-confirm-header {
+		height: 0.4rem;
+
+		.m-header-title {
+			line-height: 0.4rem;
+			font-weight: bold;
+			text-indent: 0.2rem;
+			border-bottom: 1px solid #ddd;
+		}
+	}
+
+	.m-confirm-body {
+		text-align: center;
+		line-height: 0.3rem;
+		font-size: 0.16rem;
+		font-weight: bold;
+		min-height: 0.6rem;
+		padding: 0.25rem 0.2rem;
+	}
+
+	.m-confirm-footer {
+		display: flex;
+		display: -webkit-flex;
+		height: .48rem;
+
+		.btn-cancel,
+		.btn-ok {
+			flex: 1;
+			-webkit-flex: 1;
+			-moz-flex: 1;
+			-ms-flex: 1;
+			line-height: 0.48rem;
+			border-top: 1px solid #d5d5d5;
+			text-align: center;
+			transition: all 0.3s ease-in-out;
+			cursor: pointer;
+			font-size: 0.16rem;
+
+			&:hover {
+				background: #e8e8e8;
+				font-weight: bold;
+			}
+		}
+
+		.btn-cancel {
+			border-right: 1px solid #d5d5d5;
+		}
+	}
+}

@@ -1,0 +1,147 @@
+@import '../../../scss/_config.scss';
+.m-group-item {
+	margin-top: 0.1rem;
+	background: #ffffff;
+
+	.item-header {
+		position: relative;
+
+		.tag {
+			position: absolute;
+			left: 0;
+			top: 0.1rem;
+			width: 0.95rem;
+			height: 0.23rem;
+			line-height: 0.23rem;
+
+			background: url(../../../../res/images/GroupSkuDetail/group_list_img_title@3x.png) no-repeat;
+			background-size: contain;
+
+			.discount {
+				margin-left: 0.03rem;
+				margin-right: 0.03rem;
+				color: #ffe123;
+			}
+
+			.sep {
+				color: #aaa;
+			}
+
+			.group-count {
+				margin-left: 0.03rem;
+				margin-right: 0.03rem;
+				color: #fff;
+			}
+		}
+
+		.item-img {
+			img {
+				width: 100%;
+				height: 3rem;
+			}
+		}
+	}
+
+	.item-body {
+		padding: 0.1rem;
+
+		.item-info {
+			margin-top: 0.05rem;
+
+			.name {
+				font-size: 0.15rem;
+				color: #222;
+				text-align: left;
+				@include lineMore(1);
+			}
+
+			.desc {
+				margin-top: 0.05rem;
+				font-size: 0.12rem;
+				color: #999999;
+				line-height: 0.18rem;
+				text-align: left;
+				@include lineMore(2);
+			}
+		}
+	}
+
+	.item-footer {
+		padding: 0.1rem;
+
+		.bottom-area {
+
+			.item-extra-info {
+				text-align: left;
+			}
+			position: relative;
+			border-radius: 0.05rem;
+			height: 0.4rem;
+			line-height: 0.4rem;
+			background: #f6f7f8;
+
+			.group-count {
+				margin-left: 0.1rem;
+				color: #222222;
+				margin-right: 0.05rem;
+			}
+
+			.unit-price {
+				.sign {
+					font-size: 0.12rem;
+					color: #ff3600;
+				}
+				font-size: 0.18rem;
+				color: #ff3600;
+				margin-left: 0.03rem;
+				margin-right: 0.05rem;
+			}
+
+			.sep {
+				color: #dedede;
+			}
+
+			.market-price {
+				font-size: 0.13rem;
+				color: #999999;
+				text-decoration: line-through;
+			}
+			.btn {
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: inline-block;
+				width: 1rem;
+				font-size: 0.13rem;
+				padding-left: 0.1rem;
+				padding-right: 0.1rem;
+				border-radius: 0 0.05rem 0.05rem 0;
+				background: #ffe123;
+				text-align: center;
+				cursor: pointer;
+
+				&.offsale {
+					color: #ffffff;
+					background: #cccccc;
+				}
+				&.end {
+					color: #ffffff;
+					background: #cccccc;
+				}
+				&.notready {
+					color: #ffffff;
+					background: #cccccc;
+				}
+				&.ready {
+					&:after {
+						content: ">";
+						color: #222;
+						font-size: 0.14rem;
+					    font-weight: bold;
+					    font-family: monospace;
+					}
+				}
+			}
+		}
+	}
+}

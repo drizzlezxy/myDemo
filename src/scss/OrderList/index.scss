@@ -1,0 +1,63 @@
+@import '../_config.scss';
+
+html, body {
+	height: 100%;
+}
+
+.m-orderlist { 
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    background: #f0eff5;
+
+    .m-header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .m-body {
+        margin-top: 0.5rem;
+    }
+
+    .m-footer {
+        
+    }
+}
+
+
+.m-modal{
+        width: 2.5rem;
+        height: 1.3rem;
+        color: #333;
+        border-radius: 0.075rem;
+        text-align: center;
+        padding: 0.1rem 0 0.15rem;
+        .row1 {
+            position: relative;
+            line-height: 0.74rem;
+            font-size: 0.14rem;
+        }
+        .row2 {
+            line-height: 0.31rem;
+            margin: 0 0.2rem;
+            font-size: 0.13rem;
+            @extend %displayFlex;
+            @include flexJustifyContent(center);
+            &.confirm {
+                background-color: #ffe123 !important;
+                width: 1rem;
+                margin: 0 auto;
+            }
+            .item {
+                width: 1rem;
+                background-color: #ffe123 !important;
+                &.no {
+                    margin-left: 0.1rem;
+                    background-color: #d3d5d8 !important;
+                }
+            }
+        }
+}

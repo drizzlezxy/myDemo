@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "code": "0",
+  "errorMSG": "ok",
+  "result": {
+    "list": [{
+      "id": 101,
+      "name": "景点",
+      "longitude": 0.0,
+      "latitude": 0.0,
+      "avgPrice": 0
+    }, {
+      "id": 106,
+      "name": "洗手间",
+      "longitude": 0.0,
+      "latitude": 0.0,
+      "avgPrice": 0
+    }, {
+      "id": 105,
+      "name": "停车场",
+      "longitude": 0.0,
+      "latitude": 0.0,
+      "avgPrice": 0
+    }, {
+      "id": 102,
+      "name": "餐饮",
+      "longitude": 0.0,
+      "latitude": 0.0,
+      "avgPrice": 0
+    }, {
+      "id": 103,
+      "name": "购物",
+      "longitude": 0.0,
+      "latitude": 0.0,
+      "avgPrice": 0
+    }, {
+      "id": 104,
+      "name": "酒店",
+      "longitude": 0.0,
+      "latitude": 0.0,
+      "avgPrice": 0
+    }, {
+      "id": 1701,
+      "name": "本地交通",
+      "longitude": 0.0,
+      "latitude": 0.0,
+      "avgPrice": 0
+    }]
+  }
+}

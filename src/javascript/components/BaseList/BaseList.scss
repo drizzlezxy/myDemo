@@ -1,0 +1,29 @@
+.m-base-list {
+  .m-loading {
+    width: 100%;
+    padding-top: 0.1rem;
+    font-size: 0.14rem;
+    margin-right: 0.05rem;
+    text-align: center;
+    height: 10rem;
+    .fa-spinner::after {
+  	display: inline-block;
+  	font-family: 'FontAwesome';
+  	content: '\f110';
+    }
+    .fa-spin::after {
+  	animation: fa-spin 2s infinite linear;
+    }
+  }
+
+  .m-load-more {
+    width: 100%;
+    font-size: 0.14rem;
+    background-color: #efeff4;
+    color: #c1c3ca;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    vertical-align: middle;
+    text-align: center;
+  }
+}

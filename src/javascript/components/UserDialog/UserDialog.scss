@@ -1,0 +1,45 @@
+@import '../../../scss/_config.scss';
+
+.m-notify-dlg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(0,0,0,0.4);
+  }
+  .dlg_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 86.666666%;
+    text-align: center;
+    font-size: .17rem;
+    background-color: rgba(255,255,255,1);
+    color: #333;
+    border-radius: 0.08rem;
+  }
+
+  .close_icon {
+    position:absolute;
+    right:0.1rem;
+    top:0.1rem;
+    display:inline-block;
+    width:0.4rem;
+    height:0.4rem;
+    background: url(../../../../res/images/YQGift/icon_dlg_close.png) no-repeat;
+    background-size:12px;
+    background-size: 0.12rem;
+    background-position: top right;
+  }
+
+}

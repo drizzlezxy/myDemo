@@ -1,0 +1,66 @@
+@import '../_config.scss';
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #f4f4f4;
+}
+
+.m-yqpresentstart { 
+    .m-PrdtList {
+    	padding: 0.15rem;
+    }
+    .m-treat-detail {
+    	border-top: 1px solid #e5e5e5;
+    	position: fixed;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	padding: 0.15rem;
+    	background-color: #fbf6ef;
+    	font-size: 0.17rem;
+    	.detail-count {
+    		@extend %displayFlex;
+    		border: 1px solid #eee;
+    		width: 100%;
+    		height: 0.5rem;
+    		background-color: #fff;
+    		padding: 0.1rem;
+    		line-height: 0.3rem;
+    		input {
+    			border: 0;
+    			text-align: right;
+    			margin-right: 0.05rem;
+    			@extend %flexGrow;
+				&::-webkit-input-placeholder { font-size: 0.15rem;}
+				&::-moz-placeholder { font-size: 0.15rem;} /* firefox 19+ */
+				&:-ms-input-placeholder { font-size: 0.15rem;} /* ie */
+				&:-moz-placeholder { font-size: 0.15rem;}
+    		}
+    	}
+    	.detail-total-price {
+    		@extend %displayFlex;
+    		@include flexJustifyContent(center);
+			line-height: 0.56rem;
+    		.price {
+    			span {
+    				color: #d84343;
+    			}
+    		}
+    		.text {
+                margin-left: 0.05rem;
+    			font-size: 0.13rem;
+    			color: #999;
+    		}
+    	}
+    	.btn-treat {
+	    	width: 100%;
+	    	line-height: 0.45rem;
+	    	background-color: #d84343;
+	    	border: 0;
+	    	border-radius: 0.02rem;
+	    	color: #fff;
+	    	font-size: 0.16rem;
+    	}
+    }
+}

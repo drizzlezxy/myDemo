@@ -1,0 +1,41 @@
+@import '../_config.scss';
+
+body{
+    background-color: #efeff4;
+}
+
+.m-prdtlist { 
+    .m-header {
+        .m-tab {
+            .tab-item {
+            	font-size: 0.15rem;
+                border-bottom: 0.01rem solid #e5e5e5;
+            }
+        }
+        .sort-tabs {
+            position: relative;
+            z-index: 999;
+            margin: -0.1rem 0 0.05rem;
+            background-color: #fff;
+            padding-left: 0.25rem;
+            overflow: hidden;
+            .tab-item {
+                float: left;
+                line-height: 0.4rem;
+                padding-right: 0.25rem;
+                font-size: 0.12rem;
+                color: #666;
+                &.active {
+                    color: #222;
+                }
+            }
+        }
+    }
+
+    .m-body {
+        
+    }
+
+    .m-footer {       
+    }
+}

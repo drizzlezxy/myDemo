@@ -1,0 +1,21 @@
+@import '../_config.scss';
+html, body {
+	width: 100%;
+
+	
+	overflow: auto;
+	background: #f4f4f4;
+}
+
+.m-yqopengift { 
+    .m-body {
+        
+    }
+
+    .m-footer {
+        position:fixed;
+		width:100%;
+		bottom:0;
+		background: #f4f4f4;
+    }
+}

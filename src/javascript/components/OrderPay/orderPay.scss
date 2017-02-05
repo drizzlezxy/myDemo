@@ -1,0 +1,61 @@
+@import '../../../scss/_config.scss';
+
+.m-order-pay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  font-size: $font-size-sm;
+  font-weight: 300;
+  color: #54575f;
+  width:100%;
+  .wrap {
+    display: flex;
+    align-items: center;
+    height: 0.49rem;
+    padding-left: 0.14rem;
+    .pay-price {
+      flex: 1;
+      .big {
+        font-size: 0.16rem;
+        color: #ff3600;
+      }
+      .small {
+        font-size: 0.13rem;
+        color: #ff3600;
+      }
+      .carriageFee {
+        color: #9397a1;
+      }
+    }
+    .pay-button {
+      width: 1.4rem;
+      line-height: 0.49rem;
+      background-color: #2ac1bc;
+      color: #fff;
+      text-align: center;
+      font-size: $font-size-lg;
+      &.disabled {
+        background-color: #95e0de;
+      }
+    }
+  }
+  .order-body {
+    @extend %modal-body;
+    &.order-body-1 {
+      @extend %modal-body-1;
+    }
+  }
+
+  .order-foot {
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    text-align: center;
+    color: #2ac1bc;
+    font-size: $font-size-xl;
+    border-top: 1px solid #e2e7ea;
+    font-weight: 300;
+  }
+}

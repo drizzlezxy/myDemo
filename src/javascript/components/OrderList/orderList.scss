@@ -1,0 +1,55 @@
+@import '../../../scss/_config.scss';
+
+.m-order-list {
+  background: #f0eff5;
+  a {
+    color: #000;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .shop-head {
+    border-top: 10px solid #efeff4;
+    a {
+      display: block;
+      width: 100%;
+      color: $color-base;
+      font-size: $font-size-lg;
+      border-bottom: 1px solid #e2e7ea;
+      background: #fff;
+    }
+
+    h1 {
+      display: flex;
+      padding: 0 0.15rem;
+      height: 0.44rem;
+      line-height: 0.44rem;
+      .shop {
+        margin-right: 0.1rem;
+      }
+      .shopname {
+        flex: 1;
+      }
+      .shop, .arrow {
+        align-self: center;
+      }
+    }
+  }
+  .shop-foot {
+    padding-right: 0.15rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background-color: #fafafa;
+    text-align: right;
+    span:first-child {
+      margin-right: 0.14rem;
+    }
+    strong {
+      color: #ff3600;
+    }
+    span:last-child {
+      margin-left: 0.07rem;
+      color: #9397a1;
+    }
+  }
+}

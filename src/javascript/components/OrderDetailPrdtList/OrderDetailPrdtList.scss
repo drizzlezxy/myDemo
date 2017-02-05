@@ -1,0 +1,61 @@
+@import '../../../scss/_config.scss';
+
+.m-prdtlist {
+	padding: 0.1rem;
+	background: #fff;
+	
+	.u-order-header {
+		background: #fff;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 0.05rem;
+
+		.status {
+			float: right;
+		}
+	}
+	
+	.m-prdt-item {
+		@extend %displayFlex;
+	    padding: 0.1rem;
+	    border-bottom: 1px solid #ccc;
+	    background: #fff;
+
+	    img {
+	      flex-shrink: 0;
+	      margin-right: 0.1rem;
+	      width: 0.9rem;
+	      height: 0.9rem;
+	      border-radius: 2px;
+	    }
+	    .detail {
+	      @extend %displayFlexCol;
+	      @extend %flexGrow;
+	      
+	      .tag-container {
+	        @extend %displayFlex;
+
+	        .tag {
+	          width: 0.33rem;
+	          height: 0.14rem;
+	          background: #eeff12;
+	        }
+	      }
+	      .detail-name {
+	        div:first-child {
+	          @include lineMore(2);
+	        }
+	      }
+	      .detail-spec {
+	        @extend %displayFlex;
+	        @extend %flexGrow;
+	        margin-top: 0.2rem;
+	        color: #666666;
+
+	        div:first-child {
+	          @extend %flexGrow;
+	          @extend %two-line-more;
+	        }
+	      }
+	    }
+	}
+}

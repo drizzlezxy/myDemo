@@ -1,0 +1,147 @@
+@import '../../../scss/_config.scss';
+
+.m-order-card-item {
+  padding: 0 0.11rem;
+  background: #ffffff;
+  margin-bottom: 0.1rem;
+
+
+  a {
+    color: #000;
+  }
+
+  .m-order-header {
+    padding: 0.1rem 0.11rem;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+
+    .order-status {
+      float: right;
+
+      &.paying {
+        color: #ff3600;
+      }
+
+      &.payed {
+
+      }
+      
+      &.group-wating {
+        color: #ffa201;
+      }
+
+      &.deliverying {
+      }
+      &.received {}
+      &.trade-success {
+        color: #84c23c;
+      }
+      &.cancel {}
+      &.close {}
+      &.refund {}
+      &.refund-close {}
+    }
+  }
+
+  .m-order-footer {
+    position: relative;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    border-top: 1px solid #e5e5e5;
+
+    .btn-group {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2.3rem;
+      height: 100%;
+      padding: 0.08rem 0.06rem;
+      display: block;
+      
+      .cancel, 
+      .pay,
+      .view,
+      .del,
+      .confirm {
+        float: right;
+        margin-left: 0.06rem;
+        border: 1px solid #222222;
+        background: #fff;
+        text-align: center;
+        height: 0.28rem;
+        max-width: 0.72rem;
+        min-width: 0.56rem;
+        border-radius: 0.02rem;
+      }
+
+      .pay {
+        background: #ffe123;
+        border: 0;
+      }
+
+      // .view {
+      //   background: #ffe123;
+      //   border: 0;
+      // }
+
+      // .confirm {
+      //   background: #ffe123;
+      //   border: 0;
+      // }
+
+    }
+  }
+
+  .m-order-card {
+    @extend %displayFlex;
+    width: 100%;
+    padding: 0.1rem 0.15rem 0.1rem 0.1rem;
+    color: #000;
+
+    img {
+      flex-shrink: 0;
+      margin-right: 0.1rem;
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 2px;
+    }
+    .detail {
+      @extend %displayFlexCol;
+      @extend %flexGrow;
+      
+      .tag-container {
+        @extend %displayFlex;
+
+        .tag {
+          width: 0.33rem;
+          height: 0.14rem;
+          background: url(../../../../res/images/OrderList/pintuan@3x.png) no-repeat;
+          background-size: contain;
+        }
+      }
+      .detail-name {
+        @extend %displayFlexCol;
+        span {
+          @extend %flexGrow;
+          @extend %two-line-more;
+        }
+      }
+      .detail-spec {
+        @extend %displayFlex;
+        @extend %flexGrow;
+        margin-top: 0.2rem;
+        color: #666666;
+
+        span:first-child {
+          @extend %flexGrow;
+          @extend %two-line-more;
+        }
+      }
+      .status {
+        margin-bottom: 0.05rem;
+        color: #ff3600;
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

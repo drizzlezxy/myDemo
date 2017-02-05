@@ -1,0 +1,81 @@
+{
+	"blockList": [
+		{
+			"blockName": "礼盒",
+			"listType": "row1",
+			"blockContent": { 
+				"cardType": "default",
+				"imgPrefix": "../../../res/images/SpringFestival/",
+				"linkPrefix": "../ItemDetail/index.html?",
+				"detailList": [
+					{
+						"imgUrl": "present_101.png",
+						"linkHref": "prdtId=1169",
+						"anchor": "anchor1"
+					},{
+						"imgUrl": "present_102.png",
+						"linkHref": "prdtId=1171"
+					},{
+						"imgUrl": "present_301.png",
+						"linkHref": "prdtId=1175",
+						"anchor": "anchor2"
+					},{
+						"imgUrl": "present_302.png",
+						"linkHref": "prdtId=1176"
+					},{
+						"imgUrl": "present_201.png",
+						"linkHref": "prdtId=1172",
+						"anchor": "anchor3"
+					},{
+						"imgUrl": "present_202.png",
+						"linkHref": "prdtId=1173"
+					}
+				]
+			}
+		},
+		{
+			"blockName": "推荐爆款",
+			"listType": "row2",
+			"title": true,
+			"blockContent": { 
+				"cardType": "default",
+				"imgPrefix": "../../../res/images/SpringFestival/",
+				"linkPrefix": "../ItemDetail/index.html?",
+				"detailList": [
+					{
+						"imgUrl": "prdt_2001.png",
+						"linkHref": "prdtId=1193",
+						"anchor": "anchor4"
+					},{
+						"imgUrl": "prdt_2008.png",
+						"linkHref": "prdtId=1181"
+					},{
+						"imgUrl": "prdt_2007.png",
+						"linkHref": "prdtId=1180"
+					},{
+						"imgUrl": "prdt_2006.png",
+						"linkHref": "prdtId=1178"
+					},{
+						"imgUrl": "prdt_2004.png",
+						"linkHref": "prdtId=1196"
+					},{
+						"imgUrl": "prdt_2003.png",
+						"linkHref": "prdtId=1195"
+					},{
+						"imgUrl": "prdt_2002.png",
+						"linkHref": "prdtId=1194"
+					},{
+						"imgUrl": "prdt_2005.png",
+						"linkHref": "prdtId=1197"
+					},{
+						"imgUrl": "prdt_else1.png",
+						"linkHref": ""
+					},{
+						"imgUrl": "prdt_else2.png",
+						"linkHref": ""
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,20 @@
+@import '../_config.scss';
+
+.m-calendarprdtdetail { 
+    .m-header {
+        
+    }
+
+    .m-body {
+        .detail-image {
+        	width: 100%;
+        	transition: all .3s ease-in-out;
+        	-webkit-transition: all .3s ease-in-out;
+        	opacity: 0;
+        }
+    }
+
+    .m-footer {
+        
+    }
+}

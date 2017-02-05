@@ -1,0 +1,39 @@
+@import '../../../scss/_config.scss';
+
+.m-groupskudetailfooter {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0.6rem;
+	background: #f2f2f2;
+	cursor: pointer;
+
+	@extend %displayFlex;
+	@extend %AlignCenter;
+    @include flexJustifyContent(center);
+
+	.footer-item {
+		@extend %displayFlexCol;
+		@extend %AlignCenter;
+		
+		border-right: 1px solid #cccccc;
+
+		.item {
+			@extend %flexGrow;
+
+			&.price {
+				font-size: 0.18rem;
+				margin-bottom: 0.04rem;
+			}
+
+			&.label {
+				font-size: 0.14rem;
+			}
+		}
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+}

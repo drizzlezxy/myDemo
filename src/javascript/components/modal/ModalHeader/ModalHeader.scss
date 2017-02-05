@@ -1,0 +1,16 @@
+.modal-header {
+	position: relative;
+
+	.modal-close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 0.32rem;
+		height: 0.32rem;
+		margin-right: -0.16rem;
+		margin-top: -0.16rem;
+		text-align: center;
+		line-height: 0.32rem;
+		cursor: pointer;
+	}
+}

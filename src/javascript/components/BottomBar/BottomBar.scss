@@ -1,0 +1,56 @@
+    .m-bottom-bar{
+    	border-top: 1px solid #d7d7d7;
+    	position: fixed;
+    	bottom: 0;
+    	left: 0;
+    	padding: 5px ;
+    	width: 100%;
+    	background-color: #fff;
+    	>div{
+    		display: inline-block;
+    		width: 25%;
+    		text-align: center;
+    		font-size: 11px;
+    		line-height: 11px;
+			color: #565656;
+    		.icon{
+    			display: block;
+    			margin: 0 auto;
+    			width: 22px;
+				height: 22px;
+				margin-bottom: 6px;
+				background-size: 176px;
+				background-repeat: no-repeat;
+				@media only screen and (min-width: 1125px) {
+					background-image: url(../../../../res/images/BottomBar/bottom_bar_icon@3x.png);
+				}
+				background-image: url(../../../../res/images/BottomBar/bottom_bar_icon@2x.png);
+				&.icon-home-page{
+					&.active{
+						background-position: -22px;
+					}
+				}
+				&.icon-fight-group{
+					background-position: -44px;
+					&.active{
+						background-position: -66px;
+					}
+				}
+				&.icon-cart{
+					background-position: -88px;
+					&.active{
+						background-position: -110px;
+					}
+				}
+				&.icon-my-profile{
+					background-position: -132px;
+					&.active{
+						background-position: -154px;
+					}
+				}
+    		}
+    		span{
+    			display: block;
+    		}
+    	}
+    }

@@ -1,0 +1,56 @@
+@import '../../../scss/_config.scss';
+
+.m-joingrouplist {
+	background: #fff;
+	padding-bottom: 0.14rem;
+
+	.u-member-list {
+		background: #fff;
+
+		.member {
+			position: relative;
+			height: 0.4rem;
+			line-height: 0.4rem;
+
+			.facebook {
+				position: absolute;
+				left: 0.17rem;
+				top: 0.07rem;
+				width: 0.25rem;
+				height: 0.25rem;
+				border-radius: 0.4rem;
+				background: #eee;
+
+				&:after {
+					position: absolute;
+					left: 0.12rem;
+					top: 0.42rem;
+					width: 0.01rem;
+					height: 0.6rem;
+					display: block;
+					background: #eee;
+					content:' ';
+				}
+			}
+
+			.info {
+				position: absolute;
+				left: 0.57rem;
+				top: 0;
+				width: 80%;
+				border-bottom: 0.01rem solid #ccc;
+
+				.desc {
+					margin-left: 0.1rem;
+					color: #666666;
+				}
+			}
+
+			&:last-child {
+				.info {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}

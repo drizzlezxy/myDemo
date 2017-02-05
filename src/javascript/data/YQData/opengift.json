@@ -1,0 +1,13 @@
+{
+	"code":0,
+	"message":"",
+	"result":{
+	    "ifSnatched":1,
+		"giftIfSnatchDetail":{
+			"skuId":111,
+			"poSkuId":222,
+			"giftId":222,
+			"quantity":3
+		}
+	}
+}

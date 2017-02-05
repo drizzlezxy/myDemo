@@ -1,0 +1,66 @@
+@import '../../../scss/_config.scss';
+
+.m-counter {
+  @extend %displayFlex;
+  @extend %AlignCenter;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  width: 95px;
+  height: 30px;
+  color: #222;
+  font-size: 14px;
+
+  .icon-less, 
+  .icon-more {
+    @include flex(0, 0, 30px);
+  	max-width: 30px;
+  	height: 30px;
+  	display: block;
+  	text-align: center;
+    .icon{
+      display: block;
+      margin: 10px;
+      width: 10px;
+      height: 10px;
+      background-image: url(../../../../res/images/Cart/operate@2x.png);
+      background-repeat: no-repeat;
+      background-size: 35px 14px;
+    }
+  }
+
+  .icon-less {
+    border-right: 0.01rem solid #e5e5e5;
+    &.enabled .icon{
+      background-position: -15px 0;
+    }
+
+    &.disabled .icon{
+      background-position: -15px 0;
+    }
+  }
+
+  .icon-more {
+    border-left: 0.01rem solid #e5e5e5;
+    &.enabled .icon{
+      background-position: -25px 0;
+    }
+
+    &.disabled .icon{
+      background-position: -25px 0;
+    }
+  }
+
+  .num {
+  	margin: 0 3px;
+    width: 40px;
+    text-align: center;
+    overflow: hidden;
+    input {
+      width: 100%;
+      line-height: 100%;
+      border: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
