@@ -1,7 +1,0 @@
-{
-	"NOTREADY": 1,
-	"END": 2,
-	"READY": 3,
-	"SOLDOUT": 4,
-	"OFFSALE": 5
-}

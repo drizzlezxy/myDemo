@@ -1,8 +1,0 @@
-{
-	"current" : "master",
-	"local" : "http://172.16.22.73:3001/",
-	"test" : "http://sjyxtest.yiqiguang.com/sjyx/",
-	"release" : "http://sjyxtest.yiqiguang.com/sjyxkf/",
-	"master" : "http://sjyx.xinguang.com/",
-	"pageOnline" : "http://sjyx.xinguang.com/build/sijiPages/"
-}

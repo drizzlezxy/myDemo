@@ -1,8 +1,0 @@
-{
-	"query/item": "data/queryItem.json",
-	"query/units": "data/queryUnits.json",
-	"item/getPrdtDetail": "data/item/getPrdtDetail.json",
-	"item/commitOrder": "data/order/commitOrder.json",
-	"item/getShopPrdtList": "data/item/getShopPrdtList.json",
-	"cart/getCartStatus": "data/cart/getCartStatus.json"
-}

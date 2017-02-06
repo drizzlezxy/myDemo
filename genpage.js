@@ -14,9 +14,9 @@ usage();
 
 var paths = {
 	'page': './src/javascript/page/',
-	'tpl': './src/sijiPages/',
+	'tpl': './src/newPages/',
 	'style': './src/scss/',
-	'templates' : './templates/'
+	'templates': './templates/'
 };
 
 
@@ -34,11 +34,11 @@ function execCmd() {
 
 execCmd();
 
-function parseTpls (tplContents, parseOption) {
+function parseTpls(tplContents, parseOption) {
 	var parsedContentInfomation = {};
 	var parseSingleTpl = parseTplByStretagy();
 	for (var tplKey in tplContents) {
-		(function (key, content) {
+		(function(key, content) {
 			parsedContentInfomation[key] = parseSingleTpl(key, content[key], parseOption);
 		})(tplKey, tplContents);
 	}
@@ -47,18 +47,18 @@ function parseTpls (tplContents, parseOption) {
 
 
 
-function parseTplByStretagy(){
+function parseTplByStretagy() {
 	var commands = {
-		'pagename' : function (opt) {
+		'pagename': function(opt) {
 			return opt.page.toLowerCase();
 		},
-		'PageName' : function (opt) {
+		'PageName': function(opt) {
 			return opt.page;
 		}
 	};
 	var parseTplStretagy = {
-		'tpl' : function (content, option) {
-			var pageContent = new String(content).replace(/{{(.*?)}}/gm, function (group, matched){
+		'tpl': function(content, option) {
+			var pageContent = new String(content).replace(/{{(.*?)}}/gm, function(group, matched) {
 				return commands[matched](option);
 			});
 			return {
@@ -68,8 +68,8 @@ function parseTplByStretagy(){
 				subfix: option.tplSubfix
 			};
 		},
-		'entry' : function (content, option) {
-			var pageContent = new String(content).replace(/{{(.*?)}}/gm, function (group, matched){
+		'entry': function(content, option) {
+			var pageContent = new String(content).replace(/{{(.*?)}}/gm, function(group, matched) {
 				return commands[matched](option);
 			});
 			return {
@@ -79,8 +79,8 @@ function parseTplByStretagy(){
 				subfix: 'jsx'
 			};
 		},
-		'style' : function (content, option) {
-			var pageContent = new String(content).replace(/{{(.*?)}}/gm, function (group, matched){
+		'style': function(content, option) {
+			var pageContent = new String(content).replace(/{{(.*?)}}/gm, function(group, matched) {
 				return commands[matched](option).toLowerCase();
 			});
 			return {
@@ -92,21 +92,21 @@ function parseTplByStretagy(){
 		},
 	};
 
-	return function (tplKey, content, option) {
+	return function(tplKey, content, option) {
 		return parseTplStretagy[tplKey](content, option);
 	};
 
 }
 
 
-function writeGenFiles (targetFilesInfo) {
+function writeGenFiles(targetFilesInfo) {
 	for (var key in targetFilesInfo) {
-		(function (key, targetFilesInfo) {
+		(function(key, targetFilesInfo) {
 			var info = targetFilesInfo[key];
 			var dirname = path.join(__dirname, info.filepath);
-			var filepath = dirname + info.name +'.' + info.subfix;
-			var writeFileFn = function () {
-				fs.writeFile(filepath, info.content, function (err){
+			var filepath = dirname + info.name + '.' + info.subfix;
+			var writeFileFn = function() {
+				fs.writeFile(filepath, info.content, function(err) {
 					if (err) throw err;
 					console.log('file ' + info.name + ' has been written to path ' + filepath + ' successfully');
 
@@ -114,14 +114,14 @@ function writeGenFiles (targetFilesInfo) {
 				});
 			};
 
-			fs.exists(dirname, function (exists){
+			fs.exists(dirname, function(exists) {
 				if (exists) {
 					//writeFileFn();
 					console.log('Page exists, check your parameters');
 				} else {
-					fs.mkdir(dirname, 0o777, function (err) {
+					fs.mkdir(dirname, 0o777, function(err) {
 						if (err) throw err;
-						console.log('new folder['+ dirname +']has been successfully created');
+						console.log('new folder[' + dirname + ']has been successfully created');
 						writeFileFn();
 					});
 				}
@@ -130,7 +130,7 @@ function writeGenFiles (targetFilesInfo) {
 	}
 }
 
-function readTplFiles () {
+function readTplFiles() {
 	var contentMap = {};
 	var tplNames = {
 		tpl: 'index.tpl',

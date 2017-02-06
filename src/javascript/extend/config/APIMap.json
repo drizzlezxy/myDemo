@@ -1,7 +1,0 @@
-{
-	"DELETE_ITEM": "item/delete",
-	"COMMIT_ORDER": "order/commitOrder",
-	"GET_PRDT_DETAIL": "item/getPrdtDetail",
-	"GET_SHOP_PRDT_LIST": "item/getShopPrdtList",
-	"GET_CART_STATUS": "cart/getCartStatus",
-}
