@@ -7,15 +7,21 @@ var filePath = defaultSettings.filePath;
 var precss = require('precss');
 var autoprefixer = require('autoprefixer');
 
+// Create multiple instances
+const extractCSS = new ExtractTextPlugin('[name].[hash].css');
+const extractSASS = new ExtractTextPlugin('[name].[hash].css');
+
 var webpackConfig = {
-  entry: {},
-  output: {
-    path: filePath.devbuild,
-    filename: '[name].js',
-    publicPath: filePath.publicPath
+  entry: {
+    common: ['react', 'react-dom', 'jquery', 'babel-polyfill']
   },
-  cache: true,
-  devtool: 'inline-source-map',
+  output: {
+    path: filePath.build,
+    filename: '[name].[hash].js',
+    publicPath: '/build/'
+  },
+  cache: false,
+  devtool: false,
   // 定义路径及文件的别名（方便书写）
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -34,27 +40,30 @@ var webpackConfig = {
     }
   },
   module: {
-    // 排除项 FIXME
-    // noParse: [
-    //   path.join(__dirname, '../node_modules/jquery/dist/jquery.min.js')
-    // ],
-    // 加载器
-    loaders: [{
+    rules: [{
       test: /.jsx?$/,
-      loaders: ['react-hot-loader', 'babel-loader?presets[]=es2015&presets[]=react&presets[]=stage-0&presets[]=stage-1', 'webpack-module-hot-accept'],
+      use: 'babel-loader?presets[]=es2015&presets[]=react&presets[]=stage-0&presets[]=stage-1',
       exclude: /node_modules/
     }, {
       test: /\.scss/,
-      loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=compressed',
+      use: extractSASS.extract([
+        'css-loader',
+        'postcss-loader',
+        'sass-loader?outputStyle=compressed'
+      ]),
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader!postcss-loader',
+      use: extractCSS.extract([
+        'style-loader',
+        'css-loader',
+        'postcss-loader'
+      ]),
     }, {
       test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/,
-      loader: 'url-loader?limit=1&name=res/[name].[hash:8].[ext]'
+      use: 'url-loader?limit=1&name=res/[name].[hash].[ext]'
     }, {
       test: /\.json$/,
-      loader: 'json-loader'
+      use: 'json-loader'
     }]
   },
   // CSS预处理 FIXME
@@ -63,8 +72,33 @@ var webpackConfig = {
   // },
   // 插件
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('[name].css'),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "common",
+      filename: "common.[hash].js",
+      chunks: defaultSettings.chunks
+    }),
+    extractSASS,
+    extractCSS,
+    // new ExtractTextPlugin('[name].[hash].css'),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      compress: {
+        warnings: false
+      },
+      mangle: {
+        except: ['$super', '$', 'exports', 'require']
+      },
+      output: {
+        comments: false
+      }
+    }),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -76,19 +110,7 @@ var webpackConfig = {
 
 function injectEntry() {
   defaultSettings.pagesToPath().forEach(function(item) {
-    /*  item
-     *  {
-     *    name: 'Test/index',
-     *    entry: 'page/' + 'Test/index.jsx',
-     *    ftl: 'newPages/Test/index.html',
-     *    templates: path.join(filePath.tplPath, 'newPages/Test/index.html')
-     *  }
-     */
-    webpackConfig.entry[item.name] = [
-      'webpack-dev-server/client?http://localhost:' + defaultSettings.port,
-      'webpack/hot/only-dev-server',
-      item.entry
-    ];
+    webpackConfig.entry[item.name] = item.entry;
   });
 }
 
@@ -98,8 +120,12 @@ function injectHtmlWebpack() {
       new HtmlWebpackPlugin({
         filename: item.ftl,
         template: item.templates,
-        chunks: [item.name],
-        inject: true
+        chunks: ['common', item.name],
+        inject: true,
+        minify: {
+          removeComments: true,
+          collapseWhitespace: false
+        }
       })
     );
   });
