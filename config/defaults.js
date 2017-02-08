@@ -13,10 +13,6 @@ var pages = [{
     name: 'Test/index',
     entry: 'Test/index.jsx',
     ftl: 'newPages/Test/index.html'
-}, {
-    name: 'Test2/index',
-    entry: 'Test2/index.jsx',
-    ftl: 'newPages/Test2/index.html'
 }];
 
 var pagesToPath = function() {
