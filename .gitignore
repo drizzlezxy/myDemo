@@ -1,6 +1,9 @@
 node_modules
+prebuild
 devbuild
 build
+package
+dist
 
 
 
