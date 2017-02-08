@@ -49,7 +49,7 @@ gulp.task('dev', function() {
 	}).listen(defaultSettings.port, function(err) {
 		console.log('listening: http://localhost:' + defaultSettings.port);
 		console.log('Opening your system browser...');
-		open('http://localhost:' + defaultSettings.port + '/webpack-dev-server/newPages/Test/index.html');
+		open('http://localhost:' + defaultSettings.port + '/webpack-dev-server/sijiPages/Test/index.html');
 	})
 });
 
@@ -59,7 +59,7 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('copyVerify', ['clean'], function() {
-	return gulp.src('./MP_verify_UuIlb7DeTPjss2rO.txt')
+	return gulp.src('./MP_verify_Un23AF2Qpuo6nJLb.txt')
 		.pipe(gulp.dest('prebuild/'));
 })
 
@@ -116,8 +116,8 @@ gulp.task('checkPrebuild', ['prebuild', 'copyPrebuildFiles'], function() {
 
 	return deferedCheckPrebuild(function() {
 		sendEmail({
-			subject: '[name]_app build task has been successfully completed on master branch.',
-			html: '<p>Project will be updated in a minute; Have a nice day! ;D  --sent from [name]_app </p>'
+			subject: 'siji_app build task has been successfully completed on dev branch.',
+			html: '<p>Project will be updated in a minute; Have a nice day! ;D  --sent from John </p>'
 		});
 	}, function() {
 		defered.reject();
@@ -431,7 +431,7 @@ gulp.task('sendEmail', function() {
  * @param    {[type]}                     EmailConfig  [description]* 
  * @return   {[type]}                                  [description]
  */
-function sendEmail(EmailOptions = {}, EmailConfig) {
+function sendEmail(EmailOptions, EmailConfig) {
 
 	var config = EmailConfig || {
 		"host": "smtp.qq.com",
@@ -448,11 +448,8 @@ function sendEmail(EmailOptions = {}, EmailConfig) {
 	var mail = {
 		from: '289202839@qq.com',
 		to: [
-			// 'nongjiawu@xinguangnet.com',
-			'zhangxiaoyu@xinguangnet.com',
-			// 'zhaoshuangshuang@xinguangnet.com',
-			//'huangdili@xinguangnet.com',
-			//'zhoujianyuan@xinguangnet.com',
+			'nongjiawu@xinguangnet.com',
+			//'zhangxiaoyu@xinguangnet.com',
 		].join(','),
 		subject: EmailOptions.subject || 'test',
 		html: EmailOptions.html || 'nodemailer test from gulp'

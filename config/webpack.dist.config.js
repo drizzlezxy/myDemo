@@ -14,7 +14,7 @@ var webpackConfig = {
   output: {
     path: filePath.build,
     filename: '[name].[hash].js',
-    publicPath: '/build/'
+    publicPath: '/sjyxweb/build/'
   },
   devtool: false,
   cache: false,
@@ -27,7 +27,7 @@ var webpackConfig = {
       'constants': path.join(__dirname, '../src/javascript/extend/constants'),
       'scss': path.join(__dirname, '../src/scss'),
       'states': path.join(__dirname, '../src/javascript/states'),
-      'pages': path.join(__dirname, '../src/newPages'),
+      'pages': path.join(__dirname, '../src/sijiPages'),
       'images': path.join(__dirname, '../res/images'),
       'data': path.join(__dirname, '../src/javascript/data'),
       'fonts': path.join(__dirname, '../res/fonts'),
