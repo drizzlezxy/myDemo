@@ -25,7 +25,7 @@ var webpackConfig = {
       'page': path.join(__dirname, '../src/javascript/page'),
       'scss': path.join(__dirname, '../src/scss'),
       'states': path.join(__dirname, '../src/javascript/states'),
-      'pages': path.join(__dirname, '../src/sijiPages'),
+      'pages': path.join(__dirname, '../src/newPages'),
       'images': path.join(__dirname, '../res/images'),
       'data': path.join(__dirname, '../src/javascript/data'),
       'font': path.join(__dirname, '../res/font'),

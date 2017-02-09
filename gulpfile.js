@@ -49,7 +49,7 @@ gulp.task('dev', function() {
 	}).listen(defaultSettings.port, function(err) {
 		console.log('listening: http://localhost:' + defaultSettings.port);
 		console.log('Opening your system browser...');
-		open('http://localhost:' + defaultSettings.port + '/webpack-dev-server/sijiPages/Test/index.html');
+		open('http://localhost:' + defaultSettings.port + '/webpack-dev-server/newPages/Test/index.html');
 	})
 });
 
@@ -116,8 +116,8 @@ gulp.task('checkPrebuild', ['prebuild', 'copyPrebuildFiles'], function() {
 
 	return deferedCheckPrebuild(function() {
 		sendEmail({
-			subject: 'siji_app build task has been successfully completed on dev branch.',
-			html: '<p>Project will be updated in a minute; Have a nice day! ;D  --sent from John </p>'
+			subject: '[name]_app build task has been successfully completed on dev branch.',
+			html: '<p>Project will be updated in a minute; Have a nice day! ;D  --sent from [name]_app </p>'
 		});
 	}, function() {
 		defered.reject();
@@ -448,8 +448,8 @@ function sendEmail(EmailOptions, EmailConfig) {
 	var mail = {
 		from: '289202839@qq.com',
 		to: [
-			'nongjiawu@xinguangnet.com',
-			//'zhangxiaoyu@xinguangnet.com',
+			// 'nongjiawu@xinguangnet.com',
+			'zhangxiaoyu@xinguangnet.com',
 		].join(','),
 		subject: EmailOptions.subject || 'test',
 		html: EmailOptions.html || 'nodemailer test from gulp'
