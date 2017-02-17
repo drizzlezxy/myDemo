@@ -16,7 +16,8 @@ var paths = {
 	'page': './src/javascript/page/',
 	'tpl': './src/newPages/',
 	'style': './src/scss/',
-	'templates': './templates/'
+	'templates': './templates/',
+	'entry': './config/defaults.js'
 };
 
 
