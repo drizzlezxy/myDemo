@@ -1,4 +1,4 @@
-#SeasonsSelection-APP
+#问问-用户端
 
 ```This Application is based on WeChat Official Accounts, which uses ReactJS, Webpack, Gulp and Sass as its core tech, keeps the main trade logic from yiqiguang Hybrid App.```
 
@@ -25,6 +25,7 @@ Just run "gulp" in this root folder
 #How to generate a new page?
 
 We can use "node genpage.js PageName [html|ftl]" to create a new page skeleton
+**default clientWidth is 320px, make sure if the size is right. (set it in [pageName].html)**
 
 #How to request remote API?
 
@@ -33,8 +34,7 @@ Run "node proxy.js", which leads your requests to a local http(currently support
 #Containing Pages
 
 + HomePage
-+ PayStatusFail
-+ PayStatusSuccess
++ Test
 + etc...
 
 #Containing Components
@@ -46,7 +46,21 @@ Haven't been desinged now
 + CookieUtil
 + DataUtil
 + RequestUtil
++ UrlUtil
 + StringUtil
 + WeixinUtil
 + CacheManager
 + etc...
+
+# Switch Environment
+
+switch environment in './src/javascript/extend/config/config.json'(fields: 'current')
++ local 
+	Run "node proxy.js" when you need to request remote(AJAX)
++ dev
+	Use mock data instead of requesting remote.
++ test
+	Branch 'develop' 
++ ~~release~~
++ master
+	Branch 'master'
