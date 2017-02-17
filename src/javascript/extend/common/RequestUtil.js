@@ -6,9 +6,7 @@ import Util from 'extend/common/util';
 
 export default class RequestUtil {
 	static config = require('extend/config/config.json');
-	static YQconfig = require('extend/config/YQconfig.json');
 	static currentENV = RequestUtil.config.current;
-	static apiMockMap = require('extend/config/APIMockMap.json');
 	static mockCache = require('extend/common/mock');
 	static compareENV(env) {
 		return RequestUtil.currentENV === env;

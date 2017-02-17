@@ -166,7 +166,7 @@ function writeEntry() {
 		let newDate = strDate.replace('pages = [{',
 			`pages = [{
     name: '${page}/index',
-    entry: '${page}/index.js',
+    entry: '${page}/index.jsx',
     ftl: 'newPages/${page}/index.html'
 },{`
 		);
