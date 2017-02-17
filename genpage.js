@@ -128,6 +128,8 @@ function writeGenFiles(targetFilesInfo) {
 			});
 		})(key, targetFilesInfo);
 	}
+
+	writeEntry();
 }
 
 function readTplFiles() {
@@ -144,4 +146,29 @@ function readTplFiles() {
 	}
 
 	return contentMap;
+}
+
+function writeEntry() {
+	fs.readFile(paths.entry, (err, fd) => {
+		if (err) {
+			console.log('error in Webpack entry setting!');
+			return;
+		}
+		var page = process.argv[2];
+		let strDate = fd.toString();
+
+		if (strDate.search(page) != -1) {
+			console.log('Page exists in Webpack entry(./defaults.js), check your parameters')
+			return;
+		}
+
+		let newDate = strDate.replace('pages = [{',
+			`pages = [{
+    name: '${page}/index',
+    entry: '${page}/index.js',
+    ftl: 'newPages/${page}/index.html'
+},{`
+		);
+		fs.writeFileSync(paths.entry, newDate);
+	})
 }
