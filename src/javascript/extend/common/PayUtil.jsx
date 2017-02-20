@@ -91,33 +91,4 @@ export default class PayUtil {
 		// };
 		// RequestUtil.fetch(lmPayParam);
 	}
-
-	static doPostPay2(errorCode, option, callback) {
-		//callback && callback(data.result);
-		
-		let postPayParam = {
-			url: 'http://sjyxtest.yiqiguang.com/pay/syncNotify/weixinPageSynPayResult',
-			method: 'POST',
-			data: {
-		      "transactionId": null,   //微信交易单号  与payId填其一
-		      "returnCode": errorCode,
-		      "payId": option.payParam.orderPayId,   //订单号
-		      "payType": "weixinPage",
-		      "payClient": "YG03",
-		    },
-		    isAbsolute: true,
-		    absUrl: 'http://pay.xinguang.com/syncNotify/weixinPageSynPayResult',// http://pay.xinguang.com/syncNotify/weixinPageSynPayResult
-		    successFn: (data) => {
-		    	if (RequestUtil.isResultSuccessful(data)) {
-		    		 callback && callback(data.result);
-		    	} else {
-		    		 callback && callback(data.result);
-		    	}
-		    },
-		    errorFn: () => {
-		    	//alert('网络异常，请检查网络');
-		    },
-		};
-		RequestUtil.fetchYQ(postPayParam);
-	}
 }

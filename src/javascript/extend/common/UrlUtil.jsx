@@ -31,24 +31,6 @@ export default class UrlUtil {
 	}
 
 	/**
-	 * [fetchParamValueByCurrentURL 获取当前页面Url中对应key的值]
-	 * @param  {String} key [description]
-	 * @return {[type]}         [description]
-	 */
-    static fetchParamValueByCurrentURL (key) {
-    	let obj = StringUtil.parseQueryString(location.href);
-
-    	let newObj = {};
-    	if(!!obj.state)
-    		newObj = UrlUtil.tempRedirectParam2Obj(obj.state);
-
-    	for(let k in obj)
-    		if(k != 'state') newObj[k] = obj[k];
-
-    	return newObj[key];
-    }
-
-	/**
 	 * [appendParam4Url 给Url添加参数]
 	 * @param  {String} url [description]
 	 * @param  {String} paramKey [description]
@@ -77,12 +59,12 @@ export default class UrlUtil {
 	}
 
 	/**
-	 * [appendParam4Url2 给Url添加批量参数]
+	 * [appendParams4Url 给Url添加批量参数]
 	 * @param  {String} pureUrl [description]
 	 * @param  {Object} options [description]
 	 * @return {[type]}         [description]
 	 */
-	static appendParam4Url2(pureUrl, options = {}) {
+	static appendParams4Url(pureUrl, options = {}) {
 		let redirectUrl = pureUrl;
 
 		for(let key in options) 
@@ -90,6 +72,24 @@ export default class UrlUtil {
 
 		return redirectUrl;
 	}
+
+	/**
+	 * [fetchParamValueByCurrentURL 获取当前页面Url中对应key的值]
+	 * @param  {String} key [description]
+	 * @return {[type]}         [description]
+	 */
+    static fetchParamValueByCurrentURL (key) {
+    	let obj = StringUtil.parseQueryString(location.href);
+
+    	let newObj = {};
+    	if(!!obj.state)
+    		newObj = UrlUtil.tempRedirectParam2Obj(obj.state);
+
+    	for(let k in obj)
+    		if(k != 'state') newObj[k] = obj[k];
+
+    	return newObj[key];
+    }
 
 	/**
 	 * [tempObj2redirectParam 将参数拼接为字符串 [key]1ssss1[value]1mmmm1[key]1ssss1[value]]

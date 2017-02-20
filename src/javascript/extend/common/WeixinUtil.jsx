@@ -1,4 +1,5 @@
 import RequestUtil from "extend/common/RequestUtil";
+import UrlUtil from 'extend/common/UrlUtil';
 import Util from './util';
 
 export default class WeixinUtil {
@@ -225,7 +226,7 @@ export default class WeixinUtil {
 				callback: (result) => {
 					if(RequestUtil.isResultSuccessful(result)) {			
 						let data = result.result;
-						data.link = Util.getNewUrlByPageName(pageName, options);
+						data.link = UrlUtil.getUrlByPageName(pageName, options);
 						data.success = successFn;
 						data.cancel = cancelFn;
 

@@ -368,6 +368,10 @@ export default class Util {
 		return newObj;
 	}
 
+	static  deleteProperty(obj, paramName) {
+		return Reflect.deleteProperty(obj, name);
+	}
+
 	static dislodge(arr1, arr2) {
 		for (let i = 0, len = arr2.length; i < len; i++) {
 			let index = arr1.indexOf(arr2[i]);

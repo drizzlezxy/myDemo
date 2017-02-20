@@ -72,7 +72,7 @@ export default class Authorize {
 		let options = {
 			thirdPartType: 'weixin',
 			redirect_url: location.hostname,
-			redirect_param: UrlUtil.tempObj2redirectParam(Util.parseQueryString(location.href)),
+			redirect_param: UrlUtil.tempObj2redirectParam(StringUtil.parseQueryString(location.href)),
 		}
 		for(let key in options)
 			authUrl = UrlUtil.appendParam4Url(authUrl, key, options[key]);
@@ -176,29 +176,12 @@ export default class Authorize {
 		
 		let target = '../PhoneBind/index.html';
 
-		!options && (options = Util.parseQueryString(location.href));
+		!options && (options = StringUtil.parseQueryString(location.href));
 		options.redirect_url = !!pageName ?
 								UrlUtil.getPageUrlByPageName(pageName) :
-								Util.getPureUrl(location.href);
+								location.hostname;
 
-		target = Util.getNewUrlByPageName('PhoneBind', options);
+		target = UrlUtil.getUrlByPageName('PhoneBind', options);
 		location.href = target;
 	}
-	
-	static toBindPhoneYQ({pageName, options} = {}) {
-		if(!CookieUtil.getCookie("userId")) return;
-		
-		let target = '../PhoneBind/index.html';
-
-		!options && (options = Util.parseQueryString(location.href));
-		options.YQQ = 1;
-		options.redirect_url = !!pageName ?
-								UrlUtil.getPageUrlByPageName(pageName) :
-								Util.getPureUrl(location.href);
-
-		target = Util.getNewUrlByPageName('PhoneBind', options);
-		location.href = target;
-	}
-
-
 }

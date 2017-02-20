@@ -1,4 +1,5 @@
 import Util from 'extend/common/util';
+import UrlUtil from 'extend/common/UrlUtil';
 
 export default class StringUtil {
 
