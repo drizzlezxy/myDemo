@@ -93,6 +93,11 @@ export default class RequestUtil {
 		return RequestUtil.mockCache[url];
 	}
 
+	/*
+	 * [isResultSuccessful 判断Ajax返回信息是否成功]
+	 * @param 	{Object}  result	      	[description]
+	 * @return  {Boolean}                    [description]
+	 */
 	static isResultSuccessful(result) {
 		return Util.isExisty(result) && Util.isExisty(result.code) && result.code == '0';
 	}

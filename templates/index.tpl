@@ -13,7 +13,7 @@
 
 	<!-- Change the 'rem' while initializing this page -->
     <script type='text/javascript'>
-        document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.2 + 'px';
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
     </script>
 </head>
 <body>

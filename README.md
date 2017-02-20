@@ -25,7 +25,7 @@ Just run "gulp" in this root folder
 #How to generate a new page?
 
 We can use "node genpage.js PageName [html|ftl]" to create a new page skeleton
-**default clientWidth is 320px, make sure if the size is right. (set it in [pageName].html)**
+**default clientWidth is 375px, make sure if the size is right. (set it in [pageName].html)**
 
 #How to request remote API?
 
