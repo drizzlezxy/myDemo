@@ -182,6 +182,6 @@ export default class Authorize {
 								UrlUtil.getPureUrl(location.href);
 
 		target = UrlUtil.getUrlByPageName('PhoneBind', options);
-		location.href = target;
+		location.replace('target');
 	}
 }
