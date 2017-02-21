@@ -143,4 +143,14 @@ export default class UrlUtil {
 
     	return ret;
     }
+
+	/**
+	 * [getPureUrl 剔除url参数]
+	 * @param  {String} url [description]
+	 * @return {String}         [description]
+	 */
+	static getPureUrl(url) {
+		let urlArr = /^([^\?]+)?/.exec(url);
+		return !!urlArr ? urlArr[0] : url;
+	}
 }

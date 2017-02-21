@@ -71,7 +71,7 @@ export default class Authorize {
 		let authUrl = RequestUtil.getEnvPrefix() + 'oauth/gotoOauth';
 		let options = {
 			thirdPartType: 'weixin',
-			redirect_url: location.hostname,
+			redirect_url: UrlUtil.getPureUrl(location.href),
 			redirect_param: UrlUtil.tempObj2redirectParam(StringUtil.parseQueryString(location.href)),
 		}
 		for(let key in options)
@@ -179,7 +179,7 @@ export default class Authorize {
 		!options && (options = StringUtil.parseQueryString(location.href));
 		options.redirect_url = !!pageName ?
 								UrlUtil.getPageUrlByPageName(pageName) :
-								location.hostname;
+								UrlUtil.getPureUrl(location.href);
 
 		target = UrlUtil.getUrlByPageName('PhoneBind', options);
 		location.href = target;
