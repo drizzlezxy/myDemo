@@ -158,7 +158,7 @@ function writeEntry() {
 		var page = process.argv[2];
 		let strDate = fd.toString();
 
-		if (strDate.search(page) != -1) {
+		if (strDate.search(page + '/') != -1) {
 			console.log('Page exists in Webpack entry(./defaults.js), check your parameters')
 			return;
 		}
