@@ -21,7 +21,7 @@ var pages = [{
 
 var pagesToPath = function() {
     var _p = [];
-    pages.forEach(function(_page) {
+    pages.forEach( function(_page) {
         var _obj = {
             name: _page.name,
             entry: 'page/' + _page.entry,
