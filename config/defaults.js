@@ -10,10 +10,6 @@ var filePath = {
 };
 
 var pages = [{
-    name: 'StateUpdate/index',
-    entry: 'StateUpdate/index.jsx',
-    ftl: 'newPages/StateUpdate/index.html'
-},{
     name: 'HomePage/index',
     entry: 'HomePage/index.jsx',
     ftl: 'newPages/HomePage/index.html'

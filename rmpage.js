@@ -67,7 +67,8 @@ function delEntry() {
 			return;
 		}
 
-		let newDate = strDate.replace(/\{\s*.*\s*.*\s*.*Home\/.*\s*}\,\s*/, '');
+		let reg = new RegExp(`\\{\\s*.*\\s*.*\\s*.*${page}\/.*\\s*\\}\\,\\s*`);
+		let newDate = strDate.replace(reg, '');
 		fs.writeFileSync(paths.entry, newDate);
 	})
 }
