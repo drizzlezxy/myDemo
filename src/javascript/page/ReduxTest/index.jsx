@@ -5,22 +5,30 @@ import UrlUtil from "extend/common/UrlUtil";
 import RequestUtil from "extend/common/RequestUtil";
 import WeixinUtil from "extend/common/WeixinUtil";
 import 'scss/base.scss';
-import 'scss/Test/index.scss';
+import 'scss/ReduxTest/index.scss';
+
+import AddTodo from 'containers/AddTodo';
+// import VisibleTodoList from 'containers/VisibleTodoList';
+// import Footer from 'components/Footer/Footer';
+
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
+import todoApp from 'reducers/index.js';
+import App from 'components/App/App';
+
+let store = createStore(todoApp);
 
 class MyComponent extends Component {
 	constructor (props) {
 		super(props);
+
 	}
 
 	render () {
 		return (
-			<div className="m-test">
-				<div className="m-header"></div>
-				<div className="m-body">
-					test Component to implement
-				</div>
-				<div className="m-footer"></div>
-			</div>
+			<Provider store={store}>
+				<App />
+			</Provider>
 		)
 	}
 }

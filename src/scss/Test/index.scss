@@ -1,13 +1,20 @@
 @import '../_config.scss';
-
-.m-test { 
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
 }
 
-.test-list {
-	.list-item {
-		padding: 0.1rem;
-	}
+.m-test { 
+    .m-header {
+        
+    }
+
+    .m-body {
+        
+    }
+
+    .m-footer {
+        
+    }
 }

@@ -20,8 +20,10 @@ var webpackConfig = {
     extensions: ['', '.js', '.jsx'],
     alias: {
       'components': path.join(__dirname, '../src/javascript/components'),
+      'containers': path.join(__dirname, '../src/javascript/containers'),
+      'actions': path.join(__dirname, '../src/javascript/actions'),
+      'reducers': path.join(__dirname, '../src/javascript/reducers'),
       'extend': path.join(__dirname, '../src/javascript/extend'),
-      'constants': path.join(__dirname, '../src/javascript/extend/constants'),
       'page': path.join(__dirname, '../src/javascript/page'),
       'scss': path.join(__dirname, '../src/scss'),
       'states': path.join(__dirname, '../src/javascript/states'),

@@ -4,7 +4,7 @@
  */
 
 let mock = {
-	'query/item': require('data/queryItem.json'),
+	// 'query/item': require('data/queryItem.json'),
 };
 
 module.exports = mock;
