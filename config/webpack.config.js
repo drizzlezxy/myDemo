@@ -23,6 +23,7 @@ var webpackConfig = {
       'containers': path.join(__dirname, '../src/javascript/containers'),
       'actions': path.join(__dirname, '../src/javascript/actions'),
       'reducers': path.join(__dirname, '../src/javascript/reducers'),
+      'actionTypes': path.join(__dirname, '../src/javascript/data/actionTypes'),
       'extend': path.join(__dirname, '../src/javascript/extend'),
       'page': path.join(__dirname, '../src/javascript/page'),
       'scss': path.join(__dirname, '../src/scss'),
