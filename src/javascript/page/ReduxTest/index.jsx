@@ -8,16 +8,20 @@ import 'scss/ReduxTest/index.scss';
 import React from 'react'
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk';
 import todoApp from 'reducers/index'
 import App from 'components/App'
 
-let store = createStore(todoApp)
+let store = createStore(
+	todoApp,
+	applyMiddleware(thunk)
+)
 
 function doRender () {
 	ReactDOM.render(
         <Provider store={store}>
-            <App />
+            <App/>
         </Provider>,
         document.getElementById("app")
     );
