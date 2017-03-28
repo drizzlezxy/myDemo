@@ -3,12 +3,13 @@ import {
 } from 'react-redux'
 import {
   setVisibilityFilter
-} from 'actions/index'
-import Link from 'components/Link'
+} from 'actions/TodoApp'
+import Link from 'components/TodoApp/Link'
 
 const mapStateToProps = (state, ownProps) => {
+  let {todoApp} = state;
   return {
-    active: ownProps.filter === state.visibilityFilter
+    active: ownProps.filter === todoApp.visibilityFilter
   }
 }
 

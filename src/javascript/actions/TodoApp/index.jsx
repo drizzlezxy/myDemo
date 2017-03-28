@@ -2,7 +2,7 @@ import {
 	ADD_TODO,
 	TOGGLE_TODO,
 	SET_VISIBILITY_FILTER
-} from 'data/actionTypes/actionTypes';
+} from 'actionTypes/TodoApp';
 
 /*
  * action 创建函数

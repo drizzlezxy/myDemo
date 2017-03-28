@@ -1,7 +1,7 @@
 import {
 	ADD_TODO,
 	TOGGLE_TODO,
-} from 'actionTypes/actionTypes';
+} from 'actionTypes/TodoApp';
 
 function todos(state = [], action) {
 	switch (action.type) {

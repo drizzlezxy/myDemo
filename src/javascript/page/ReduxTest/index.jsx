@@ -1,27 +1,33 @@
-import Util from "extend/common/util";
-import UrlUtil from "extend/common/UrlUtil";
-import RequestUtil from "extend/common/RequestUtil";
-import WeixinUtil from "extend/common/WeixinUtil";
-import 'scss/base.scss';
-import 'scss/ReduxTest/index.scss';
-
 import React from 'react'
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk';
-import todoApp from 'reducers/index'
-import App from 'components/App'
+import { Router, Route, hashHistory } from 'react-router'
+
+import allApp from 'reducers'
+import TodoApp from 'components/TodoApp/App'
+import ImmTodoApp from 'components/ImmTodoApp/App'
+import {initialState} from 'data/initialState';
+
+import 'scss/base.scss';
+import 'scss/ReduxTest/index.scss';
+
+console.log(hashHistory)
 
 let store = createStore(
-	todoApp,
+	allApp,
+	initialState,
 	applyMiddleware(thunk)
 )
 
 function doRender () {
 	ReactDOM.render(
         <Provider store={store}>
-            <App/>
+		    <Router history={hashHistory}>
+		      <Route path="/TodoApp" component={TodoApp} />
+		      <Route path="/ImmTodoApp" component={ImmTodoApp} />
+		    </Router>
         </Provider>,
         document.getElementById("app")
     );

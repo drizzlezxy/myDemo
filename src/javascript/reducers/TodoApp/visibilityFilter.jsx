@@ -1,7 +1,7 @@
 import {
 	SET_VISIBILITY_FILTER,
 	VisibilityFilters
-} from 'actionTypes/actionTypes';
+} from 'actionTypes/TodoApp';
 
 
 function visibilityFilter(state = VisibilityFilters.SHOW_ALL, action) {

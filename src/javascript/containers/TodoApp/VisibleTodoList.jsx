@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { toggleTodo } from 'actions/index'
-import TodoList from 'components/TodoList'
+import { toggleTodo } from 'actions/TodoApp'
+import TodoList from 'components/TodoApp/TodoList'
 
 const getVisibleTodos = (todos, filter) => {
   switch (filter) {
@@ -14,8 +14,9 @@ const getVisibleTodos = (todos, filter) => {
 }
 
 const mapStateToProps = (state) => {
+  let {todoApp} = state;
   return {
-    todos: getVisibleTodos(state.todos, state.visibilityFilter)
+    todos: getVisibleTodos(todoApp.todos, todoApp.visibilityFilter)
   }
 }
 

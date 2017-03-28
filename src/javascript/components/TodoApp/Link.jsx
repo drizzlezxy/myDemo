@@ -8,7 +8,7 @@ const Link = ({
   onClick
 }) => {
   if (active) {
-    return <span>{children}</span>
+    return <strong>{children}</strong>
   }
 
   return ( <a href = "#"
