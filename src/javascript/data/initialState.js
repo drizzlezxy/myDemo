@@ -16,14 +16,14 @@ export const initialState = {
 			completed: true,
 		}],
 	},
-	immTodoApp: {
+	immTodoApp: fromJS({
 		visibilityFilter: VisibilityFilters.SHOW_ALL,
-		todos: fromJS([{
+		todos: [{
 			text: '初始化任务1',
 			completed: false,
 		}, {
 			text: '初始化任务2',
 			completed: true,
-		}]),
-	}
+		}],
+	})
 }

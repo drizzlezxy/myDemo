@@ -1,12 +1,13 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import Imm from 'immutable'
 
 import Link from 'components/ImmTodoApp/Link'
 import {setVisibilityFilter} from 'actions/ImmTodoApp'
 
 const mapStateToProps = ({immTodoApp}, ownProps) => {
 	return {
-		active: immTodoApp.visibilityFilter === ownProps.filter
+		active: immTodoApp.get('visibilityFilter') === ownProps.filter
 	}
 }
 

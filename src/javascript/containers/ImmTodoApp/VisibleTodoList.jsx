@@ -17,7 +17,7 @@ const getVisibleTodos = (todos, filter) => {
 const mapStateToProps = (state) => {
   let {immTodoApp} = state;
   return {
-    todos: getVisibleTodos(immTodoApp.todos.toJS(), immTodoApp.visibilityFilter)
+    todos: getVisibleTodos(immTodoApp.get('todos').toJS(), immTodoApp.get('visibilityFilter'))
   }
 }
 
