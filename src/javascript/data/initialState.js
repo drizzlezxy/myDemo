@@ -1,6 +1,9 @@
 import {
 	VisibilityFilters
-}from 'actionTypes/TodoApp';
+} from 'actionTypes/TodoApp';
+import {
+	fromJS,
+} from 'immutable';
 
 export const initialState = {
 	todoApp: {
@@ -12,5 +15,15 @@ export const initialState = {
 			text: '初始化任务2',
 			completed: true,
 		}],
+	},
+	immTodoApp: {
+		visibilityFilter: VisibilityFilters.SHOW_ALL,
+		todos: fromJS([{
+			text: '初始化任务1',
+			completed: false,
+		}, {
+			text: '初始化任务2',
+			completed: true,
+		}]),
 	}
 }

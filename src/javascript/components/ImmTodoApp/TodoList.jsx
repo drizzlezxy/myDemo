@@ -2,7 +2,7 @@ import React, {
   Component,
   PropTypes
 } from 'react'
-import Todo from 'components/TodoApp/Todo'
+import Todo from 'components/ImmTodoApp/Todo'
 
 export default class TodoList extends Component {
   render() {
