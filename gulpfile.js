@@ -49,7 +49,7 @@ gulp.task('dev', function() {
 	}).listen(defaultSettings.port, function(err) {
 		console.log('listening: http://localhost:' + defaultSettings.port);
 		console.log('Opening your system browser...');
-		open('http://localhost:' + defaultSettings.port + '/webpack-dev-server/newPages/Test/index.html');
+		open('http://localhost:' + defaultSettings.port + '/webpack-dev-server/newPages/ReduxTest/#/ImmTodoApp');
 	})
 });
 
