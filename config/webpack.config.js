@@ -36,6 +36,11 @@ var webpackConfig = {
     }
   },
   module: {
+    preLoaders: [{
+      test: /\.(js|jsx)$/,
+      include: path.join(__dirname, '/../src'),
+      loader: 'eslint-loader'
+    }],
     noParse: [
       path.join(__dirname, '../node_modules/jquery/dist/jquery.min.js')
     ],

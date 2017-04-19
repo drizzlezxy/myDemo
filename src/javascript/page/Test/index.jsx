@@ -12,6 +12,7 @@ import Immu, {Map} from 'immutable'
 class MyComponent extends Component {
 	constructor (props) {
 		super(props);
+		alert('useful constructor')
 	}
 
 	render () {

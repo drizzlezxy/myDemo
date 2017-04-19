@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+let process = require('process');
+let path = require('path');
+let CLIEngine = require("eslint").CLIEngine;
+
+let errMsg = [];
+
+// eslint
+let cli = new CLIEngine({
+	useEslintrc: true,
+});
+let report = cli.executeOnFiles([path.join(__dirname, "../../src/")]);
+let {errorCount, warningCount} = report;
+
+errorCount && errMsg.push({
+	title: 'eslint',
+	count: errorCount,
+})
+
+
+if(errMsg.length) {
+	console.log('============= check before commit =============\n');
+	errMsg.map((item, index) => {
+		let {title, count} = item;
+		console.log(`- ${title} has ${count} error`);
+	});
+	console.log('\nCorrect errors before commit!')
+	console.log('\n===============================================\n');
+	process.exit(errMsg.length);
+}
